@@ -1,1 +1,23 @@
-theme: jekyll-theme-merlot
+# Site Build Settings
+
+# jekyll-paginate configuration
+paginate:            5
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             []
+
+sass:
+  sass_dir: assets/css
+  style: :nested
+
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           "Lebenslauf"
+description:	       "my portfolio"
+author:              "Rajat Srivastava"
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+feed:
+ path: rss-feed.xml

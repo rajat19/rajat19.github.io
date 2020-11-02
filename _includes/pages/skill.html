@@ -1,0 +1,27 @@
+{% for skill in site.data.skill.skills %}
+<div class="block-content margBMedium">
+    <div class="skill">
+        <div class="row">
+            <div class="vc">
+                <div class="col-md-11">
+                    <ul class="skills-list clearfix">
+                    {% for progress in skill.progress %}
+                        <li>
+                            <h4>{{ progress.skill }}</h4>
+                            <div class="progress">
+                                <div class="percentage" style="background-color:{{ skill.color }}">{{ progress.percent }}%</div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-1">
+                    <div class="title" style="border: 1 px dashed black">
+                        <span>{{ skill.heading }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
