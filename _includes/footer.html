@@ -15,14 +15,12 @@
 $(document).ready(function() {
   // $('#wrapper').hide();
     $(window).load(function() {
-        console.log('window loaded');
-        preloaderFade = 1500;
+        preloaderFade = 1000;
         function hidepreloader() {
-            console.log('hide preloader');
             // var p1 = $('.sk-cube-grid');
             // p1.fadeOut(preloaderFade);
             var p2 = $('.spinner-wrapper');
-            p2.delay(1500).fadeOut(preloaderFade);
+            p2.delay(500).fadeOut(preloaderFade);
             // $('#wrapper').fadeIn(preloaderFade + 5000);
         }
         hidepreloader();

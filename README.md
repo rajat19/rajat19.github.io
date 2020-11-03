@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## rajat19.github.io
 
-You can use the [editor on GitHub](https://github.com/rajat19/rajat19.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+My portfolio is completely build using jekyll
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more.**
 
-### Markdown
+Earlier used php for dynamic content loading. Check out [Lebenslauf](https//github.com/rajat19/Lebenslauf).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Learn more about jekyll using [official documentation](https://jekyllrb.com/docs/)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rajat19/rajat19.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you want to create your profile similar to this. You need to just make changes in [_data](_data/) folder which contains all dynamic generated contents. Try it out !
