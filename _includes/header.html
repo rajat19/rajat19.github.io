@@ -17,7 +17,7 @@
     <nav id="main-nav" class="main-nav clearfix tabbed">
       <ul>
         {% for item in site.data.settings.menu %}
-          <li><a href="#{{ item.link }}"><i class="icon-{{ item.icon }}"></i>{{ item.name }}</a></li>
+          <li><a href="#{{ item.identifier }}"><i class="icon-{{ item.icon }}"></i>{{ item.name }}</a></li>
         {% endfor %}
       </ul>
     </nav>
