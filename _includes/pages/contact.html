@@ -12,12 +12,14 @@
                             <li>
                                 {% assign mail = site.data.about.details | find: "heading", "Email" %}
                                 {% assign phone = site.data.about.details | find: "heading", "Phone" %}
+                                {% assign mail2 = site.data.about.details | where: "heading", "Email" %}
+                                {% assign mail3 = "xyz" %}
                                 <div class="ico">
                                     <a href="mailto:rajatsri94@gmail.com">
                                         <i class="icon-mail"></i>
                                     </a>
                                 </div>
-                                <p>Email : {{ mail.value }} </p>
+                                <p>Email : {{ mail.value }} {{ mail2[0] }} {{ mail3 }} </p>
                             </li>
                             <li>
                                 <div class="ico">
