@@ -28,9 +28,9 @@
             <div class="col-md-6">
                 <ul class="info-list clearfix">
                     <li>
-                        {% assign job = site.data.experience.experiences | find: "current", "true" %}
+                        {% assign job = site.data.experience.experiences | where: "current", "true" %}
                         <span class="inf">Current Job</span>
-                        <span class="value">{{ job.company }}</span>
+                        <span class="value">{{ job[0].company }}</span>
                     </li>
                 </ul>
             </div>

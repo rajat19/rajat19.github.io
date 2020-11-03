@@ -10,22 +10,14 @@
                     <div class="contact-info tCenter">
                         <ul>
                             <li>
-                                {% assign mail = site.data.about.details | find: "heading", "Email" %}
-                                {% assign phone = site.data.about.details | find: "heading", "Phone" %}
-                                {% assign mail2 = site.data.about.details | where: "heading", "Email" %}
-                                {% assign mail3 = "xyz" %}
+                                {% assign phone = site.data.about.details | where: "heading", "Phone" %}
+                                {% assign mail = site.data.about.details | where: "heading", "Email" %}
                                 <div class="ico">
                                     <a href="mailto:rajatsri94@gmail.com">
                                         <i class="icon-mail"></i>
                                     </a>
                                 </div>
-                                {{ site.data.about.details }}
-                                sadasda
-                                {{ site.data.about.details[0] }}
-                                adasdasda
-                                {{ site.data.about.details | where: "heading", "Email"  }}
-                                dasdasd
-                                <p>Email : {{ mail.value }} {{ mail2[0] }} {{ mail3 }} </p>
+                                <p>Email : {{ mail[0].value }} </p>
                             </li>
                             <li>
                                 <div class="ico">
@@ -33,7 +25,7 @@
                                         <i class="icon-phone"></i>	
                                     </a>
                                 </div>
-                                <p>Tel : {{ phone.value }} </p>
+                                <p>Tel : {{ phone[0].value }} </p>
                             </li>
                         </ul>
                     </div>
