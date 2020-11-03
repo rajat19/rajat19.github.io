@@ -27,7 +27,7 @@ skills:
         percent: 84
   - name: tools
     heading: Tools
-    color: '#cd5353'
+    color: '#33373d'
     progress:
       - skill: Apache Storm
         percent: 88

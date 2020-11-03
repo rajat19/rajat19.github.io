@@ -34,6 +34,16 @@ projects:
     name: Journalista
     tags: [nodejs]
     image: journalista
+  - filters: [web-jekyll]
+    link: 'https://rajat19.github.io/system-design/'
+    name: Grokking System Design
+    tags: [jekyll, python, java]
+    image: system-design
+  - filters: [web-jekyll]
+    link: 'https://rajat19.github.io/'
+    name: rajat19.github.io
+    tags: [jekyll]
+    image: portfolio
   - filters: [web-js]
     link: 'https://paytm.com'
     name: Paytm Cashback Offers
