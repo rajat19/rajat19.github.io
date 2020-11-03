@@ -1,0 +1,23 @@
+<div class="block-content">
+    <div class="timeline experience">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="exp-holder margTop">
+                {% for exp in site.data.experience.experiences %}
+                    
+                    <div class="exp">
+                        <div class="hgroup">
+                            <h4>{{ exp.role }} - {{ exp.company }}</h4>
+                            <h6>
+                                <i class="icon-calendar"></i>{{ exp.start }} - 
+                                {% if exp.current %}<span class="current">Current</span>{% else %}{{ exp.end }}{% endif %}
+                            </h6>
+                        </div>
+                        <p>{{ exp.details }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
