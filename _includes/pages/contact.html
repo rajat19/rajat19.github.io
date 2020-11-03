@@ -5,17 +5,19 @@
                 <div class="info-holder margTMedium">
                     <div class="address-info">
                         <i class="icon-location"></i>
-                        <p>Geek Paradox</p>
+                        <p>{{ site.data.settings.profile.team }}</p>
                     </div>
                     <div class="contact-info tCenter">
                         <ul>
                             <li>
+                                {% assign mail = site.data.about.details | find: "heading", "Email" %}
+                                {% assign phone = site.data.about.details | find: "heading", "Phone" %}
                                 <div class="ico">
                                     <a href="mailto:rajatsri94@gmail.com">
                                         <i class="icon-mail"></i>
                                     </a>
                                 </div>
-                                <p>Email : rajatsri94@gmail.com </p>
+                                <p>Email : {{ mail.value }} </p>
                             </li>
                             <li>
                                 <div class="ico">
@@ -23,7 +25,7 @@
                                         <i class="icon-phone"></i>	
                                     </a>
                                 </div>
-                                <p>Tel : +91 9910364830</p>
+                                <p>Tel : {{ phone.value }} </p>
                             </li>
                         </ul>
                     </div>

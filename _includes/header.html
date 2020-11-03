@@ -31,7 +31,7 @@
       <li><a href="{{ item.link }}" target="_blank"><i class="icon-{{ item.icon }}"></i></a></li>
     {% endfor %}
     </ul>
-    <p>&copy; {{ site.data.settings.profile.team }}</p>
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.data.settings.profile.team }}</p>
     
   </div>
 </header>
