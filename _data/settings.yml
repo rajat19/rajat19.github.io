@@ -3,20 +3,31 @@ profile:
   name: 'rajat srivastava'
   team: '2020 Geek Paradox'
 
-
 menu:
-- {name: 'About', icon: 'user', link: 'about'}
-- {name: 'Professional Skills', icon: 'code', link: 'skill'}
-- {name: 'Portfolio', icon: 'info', link: 'portfolio'}
-- {name: 'Experience', icon: 'suitcase', link: 'experience'}
-- {name: 'Education', icon: 'graduation-cap', link: 'education'}
-- {name: 'Contact', icon: 'phone', link: 'contact'}
-
-ready_pages:
-  - identifier: about
+  - name: About
+    identifier: about
     h1: who am i
-  - identifier: skill
+    icon: user
+  - name: Professional Skills
+    identifier: skill
     h1: professional skills
+    icon: code
+  - name: Projects
+    identifier: projects
+    h1: projects
+    icon: info
+  - name: Experience
+    identifier: experience
+    h1: work experience
+    icon: suitcase
+  - name: Education
+    identifier: education
+    h1: education
+    icon: graduation-cap
+  - name: Contact
+    identifier: contact
+    h1: contact info
+    icon: phone
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
