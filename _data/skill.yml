@@ -1,0 +1,51 @@
+skills:
+  - name: backend
+    heading: Software Development
+    color: '#cd5353'
+    progress:
+      - skill: Node JS (Express and Koa)
+        percent: 97
+      - skill: Java Spring
+        percent: 92
+      - skill: Python
+        percent: 92
+      - skill: Typescript
+        percent: 90
+  - name: datastores
+    heading: Data Stores
+    color: '#5d7029'
+    progress:
+      - skill: Mysql
+        percent: 95
+      - skill: Mongo
+        percent: 92
+      - skill: Redis
+        percent: 94
+      - skill: Cassandra
+        percent: 85
+      - skill: Aerospike
+        percent: 84
+  - name: tools
+    heading: Tools
+    color: '#cd5353'
+    progress:
+      - skill: Apache Storm
+        percent: 88
+      - skill: Apache Kafka
+        percent: 90
+      - skill: Heroku
+        percent: 89
+      - skill: Grafana
+        percent: 86
+  - name: assets
+    heading: Assets
+    color: '#d3e0ed'
+    progress:
+      - skill: Responsible
+        percent: 90
+      - skill: Leader
+        percent: 92
+      - skill: Multitasking
+        percent: 95
+      - skill: Creative
+        percent: 83

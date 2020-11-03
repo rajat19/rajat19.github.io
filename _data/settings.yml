@@ -1,0 +1,48 @@
+profile:
+  image: 'hdphone.jpg'
+  name: 'rajat srivastava'
+  team: '2020 Geek Paradox'
+
+menu:
+  - name: About
+    identifier: about
+    h1: who am i
+    icon: user
+  - name: Professional Skills
+    identifier: skill
+    h1: professional skills
+    icon: code
+  - name: Projects
+    identifier: projects
+    h1: projects
+    icon: info
+  - name: Experience
+    identifier: experience
+    h1: work experience
+    icon: suitcase
+  - name: Education
+    identifier: education
+    h1: education
+    icon: graduation-cap
+  - name: Contact
+    identifier: contact
+    h1: contact info
+    icon: phone
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'twitter', link: 'https://twitter.com/evilj0ker'}
+- {icon: 'facebook', link: 'https://www.facebook.com/srivrajat/'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/rajatsriv19'}
+- {icon: 'github', link: 'https://github.com/rajat19'}
+
+# Customize site text
+pagination:
+  next_page: 'Newer'
+  previous_page: 'Older'
+
+sharing_button_prompt: 'Feel free to share!'
+
+related_posts: 'You may also enjoy...'
+
+post_date_prefix: 'Written on'
