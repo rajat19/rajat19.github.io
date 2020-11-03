@@ -19,6 +19,12 @@
                                         <i class="icon-mail"></i>
                                     </a>
                                 </div>
+                                {{ site.data.about.details }}
+                                sadasda
+                                {{ site.data.about.details[0] }}
+                                adasdasda
+                                {{ site.data.about.details | where: "heading", "Email"  }}
+                                dasdasd
                                 <p>Email : {{ mail.value }} {{ mail2[0] }} {{ mail3 }} </p>
                             </li>
                             <li>
