@@ -4,9 +4,12 @@
         <h3>{{ site.data.about.current_roles }}</h3>
     </div>
     <div class="row">
-        {% for quote in site.data.about.quotes %}
+        <!-- {% for quote in site.data.about.quotes %}
             <div class="col-md-6"><p>{{ quote }}</p></div>
-        {% endfor %}
+        {% endfor %} -->
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><p>{{ site.data.about.description }}</p></div>
+        <div class="col-md-2"></div>
     </div>
 </div>
 <div class="block-content">
@@ -22,6 +25,15 @@
                 </ul>
             </div>
             {% endfor %}
+            <div class="col-md-6">
+                <ul class="info-list clearfix">
+                    <li>
+                        {% assign job = site.data.experience.experiences | find: "current", "true" %}
+                        <span class="inf">Current Job</span>
+                        <span class="value">{{ job.company }}</span>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="row tCenter margTop">
             <div class="col-md-3"></div>

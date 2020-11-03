@@ -2,6 +2,10 @@ name: Rajat Srivastava
 
 current_roles: 'Software Engineer / Machine Learning Enthusiast'
 
+description: Highly effective software developer offering a wealth of more than 3+ years of relevant expertise. 
+  A valuable team player who also is personable and dedicated. 
+  Seeking the chance to bring further success to an established organisation through development, testing, and software debugging.
+
 quotes:
 - 'Credentials are like potential energy, the compliments of a name on paper, in documents, word of mouth, but faith
 	is like kinetic energy, the motion and the force that which is witnessed. Hence in the end it is the faith rather
@@ -11,7 +15,11 @@ quotes:
 	others that you are worthy of your dream, and show them that you are willing to put up a damn good fight for it.'
 
 details:
+- heading: Date of Birth
+  value: July 8, 1995
 - heading: Current City
-  value: Delhi
-- heading: Email, 
+  value: Noida
+- heading: Email
   value: rajatsri94@gmail.com
+- heading: Phone
+  value: +91 9910364830
