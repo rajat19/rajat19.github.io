@@ -7,9 +7,18 @@
                     <ul class="skills-list clearfix">
                     {% for progress in skill.progress %}
                         <li>
-                            <h4>{{ progress.skill }}</h4>
+                            <div style="display: flex;">
+                                <h4>{{ progress.skill }}</h4>
+                                {% if progress.icon %}
+                                <img height="24" width="24" style="margin-left: 10px;" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/{{ progress.icon }}.svg"/>
+                                {% endif %}
+                            </div>
                             <div class="progress">
+                                {% if progress.color %}
+                                <div class="percentage" style="background-color:{{ progress.color }}">{{ progress.percent }}%</div>
+                                {% else %}
                                 <div class="percentage" style="background-color:{{ skill.color }}">{{ progress.percent }}%</div>
+                                {% endif %}
                             </div>
                         </li>
                     {% endfor %}
