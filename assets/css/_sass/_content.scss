@@ -486,6 +486,20 @@
 	background-color: #33373d;
 }
 
+.skill-icon {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+svg.skill-node{
+    fill: green;
+}
+
+svg.skill-java {
+    fill: blue;
+}
+
 
 .percentage .percent {
  	position: absolute;
@@ -544,7 +558,7 @@
 
 
 
-.timeline:before {
+.timeline::before {
 	background: #ededed; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ededed 1%, #ededed 75%, #ffffff 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ededed), color-stop(75%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
@@ -554,20 +568,20 @@
 	background: linear-gradient(to bottom,  #ededed 1%,#ededed 75%,#ffffff 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
     bottom: 0;
-    content: "";
+    font-family: "Font Awesome 5 Free";
+    content: '';
     left: 18px;
     position: absolute;
     top: 0;
     width: 3px;
 	height:100%;
-	
 }
 
 
-.timeline:after{
+.timeline::after{
 	background: #ffffff;
 	border:3px solid #efefef;
-	font-family: 'fontello';
+	font-family: "Font Awesome 5 Free";
 	top:0;
 	left:-5px;
 	width:50px;
@@ -577,19 +591,25 @@
 	color:#333333;
 	font-size:20px;
 	line-height:45px;
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 
-.timeline.experience:after{
-	content: '\e8ba';
+.timeline.experience::after{
+	content: '\f0f2';
 }
 
 .timeline.education:after{
-	content: '\e80c';
+	content: '\f19d';
 }
 
 .timeline.rewards:after{
-	content: '\e8a9';
+	content: '\f091';
 }
 
 

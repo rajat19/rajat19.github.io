@@ -4,7 +4,8 @@
             <div class="col-md-12">
                 <div class="info-holder margTMedium">
                     <div class="address-info">
-                        <i class="icon-location"></i>
+                        <!-- <i class="icon-location"></i> -->
+                        <i class="fas fa-map-marker-alt"></i>
                         <p>{{ site.data.settings.profile.team }}</p>
                     </div>
                     <div class="contact-info tCenter">
@@ -14,7 +15,7 @@
                                 {% assign mail = site.data.about.details | where: "heading", "Email" %}
                                 <div class="ico">
                                     <a href="mailto:rajatsri94@gmail.com">
-                                        <i class="icon-mail"></i>
+                                        <i class="fas fa-envelope"></i>
                                     </a>
                                 </div>
                                 <p>Email : {{ mail[0].value }} </p>
@@ -22,7 +23,7 @@
                             <li>
                                 <div class="ico">
                                     <a>
-                                        <i class="icon-phone"></i>	
+                                        <i class="fas fa-phone"></i>
                                     </a>
                                 </div>
                                 <p>Tel : {{ phone[0].value }} </p>
