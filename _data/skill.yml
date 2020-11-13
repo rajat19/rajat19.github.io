@@ -57,6 +57,10 @@ skills:
         icon: apachekafka
         color: '#000000'
         percent: 90
+      - skill: Rabbit MQ
+        icon: rabbitmq
+        color: '#FF6600'
+        percent: 86
       - skill: Heroku
         icon: heroku
         color: '#430098'

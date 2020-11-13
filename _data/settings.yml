@@ -15,7 +15,7 @@ menu:
   - name: Projects
     identifier: projects
     h1: projects
-    icon: publish
+    icon: tasks
   - name: Experience
     identifier: experience
     h1: work experience
@@ -35,9 +35,9 @@ menu:
 
 social:
 - {icon: 'twitter', link: 'https://twitter.com/evilj0ker'}
-- {icon: 'facebook', link: 'https://www.facebook.com/srivrajat/'}
-- {icon: 'linkedin', link: 'https://www.linkedin.com/in/rajatsriv19'}
-- {icon: 'github', link: 'https://github.com/rajat19'}
+- {icon: 'facebook-f', link: 'https://www.facebook.com/srivrajat/'}
+- {icon: 'linkedin-in', link: 'https://www.linkedin.com/in/rajatsriv19'}
+- {icon: 'github-alt', link: 'https://github.com/rajat19'}
 
 # Customize site text
 pagination:
