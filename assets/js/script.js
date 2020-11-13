@@ -22,7 +22,7 @@ $("#testimonial-carousel").owlCarousel({
     pagination: true,
     singleItem: true   
 });
-  
+
   
 $("#block-slider").owlCarousel({
     navigation : false,
@@ -148,14 +148,7 @@ $('.filter li a').on("click", function(e){
 //------------------------------------- End search input------------------------------------------------//
 
 
-
-
-
-
 //---------------------------------- Form validation-----------------------------------------//
-
-
-
 
 $('.submit').on("click", function(){
 
@@ -218,15 +211,9 @@ $('.submit').on("click", function(){
 
 //---------------------------------- End form validation-----------------------------------------//
 
-
-
-
-
-
 //---------------------------------- Toogle switcher-----------------------------------------//
 
-
-$('.toggle').click(function(e) {
+	$('.toggle').click(function(e) {
         e.preventDefault();
         var styler = $('.styler');
         console.log(styler.css('left'));
@@ -245,7 +232,88 @@ $('.toggle').click(function(e) {
 
 //---------------------------------- End toogle switcher-----------------------------------------//
 
+//---------------------------------- Google map location -----------------------------------------//
 
+	$('#wrapper').bind('easytabs:after', function() {
+		var styles = [
+			{
+				stylers: [{ saturation: -100 }]
+			},{
+				featureType: 'road',
+				elementType: 'geometry',
+				stylers: [
+					{ hue: "#74b7b0" },
+					{ visibility: 'simplified' }
+				]
+			},{
+				featureType: 'road',
+				elementType: 'labels',
+				stylers: [{ visibility: 'on' }]
+			}
+		],
+		
+		lat = 28.5737,
+		lng = 77.3820,
+		customMap = new google.maps.StyledMapType(styles, {name: 'Styled Map'}),
+		
+		mapOptions = {
+			zoom: 14,
+			scrollwheel: false,
+			disableDefaultUI: true,
+			center: new google.maps.LatLng( lat, lng ),
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP]
+			}
+		},
+		map = new google.maps.Map(document.getElementById('map'), mapOptions),
+		myLatlng = new google.maps.LatLng( lat, lng ),
+		marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+		});
+		map.mapTypes.set('map_style', customMap);
+		map.setMapTypeId('map_style');
+	});
+//---------------------------------- End google map location -----------------------------------------//
+
+
+	// easytabs
+	$('#wrapper').easytabs({
+		animate				: true,
+		updateHash			: false,
+		transitionIn		: 'fadeIn',
+		transitionOut		: 'fadeOut',
+		animationSpeed		: 100,
+		tabActiveClass		: 'active',
+		tabs				: ' #main-nav.tabbed > ul > li ',
+		transitionInEasing	: 'linear',
+		transitionOutEasing	: 'linear'
+	});
+
+	// Lazyload images
+	$('.lazy').Lazy({
+		// your configuration goes here
+		scrollDirection: 'vertical',
+		effect: 'fadeIn',
+		// visibleOnly: true,
+		onError: function(element) {
+			console.log('error loading ' + element.data('src'));
+		},
+		delay: 1000
+	});
+
+	// Preloader
+	// $(window).load(function() {
+	// 	preloaderFade = 1000;
+	// 	function hidepreloader() {
+	// 		// var p1 = $('.sk-cube-grid');
+	// 		// p1.fadeOut(preloaderFade);
+	// 		var p2 = $('.spinner-wrapper');
+	// 		p2.delay(500).fadeOut(preloaderFade);
+	// 		// $('#wrapper').fadeIn(preloaderFade + 5000);
+	// 	}
+	// 	hidepreloader();
+	// });
 });
 
 
