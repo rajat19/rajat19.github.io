@@ -1,7 +1,7 @@
 filters:
-  - name: All
-    link: all
-    active: true
+  # - name: All
+  #   link: all
+  #   active: true
   - name: Javascript
     link: web-js
   - name: PHP
@@ -10,6 +10,8 @@ filters:
     link: web-py
   - name: Jekyll
     link: web-jekyll
+  - name: Java
+    link: web-java
   - name: Android
     link: android
   
@@ -34,7 +36,7 @@ projects:
     name: Journalista
     tags: [nodejs]
     image: journalista
-  - filters: [web-jekyll]
+  - filters: [web-jekyll, web-py, web-java]
     link: 'https://rajat19.github.io/system-design/'
     name: Grokking System Design
     tags: [jekyll, python, java]
@@ -44,12 +46,12 @@ projects:
     name: rajat19.github.io
     tags: [jekyll]
     image: portfolio
-  - filters: [web-js]
+  - filters: [web-js, web-java]
     link: 'https://paytm.com'
     name: Paytm Cashback Offers
     tags: [nodejs, java, '@paytm']
     image: paytm-supercash
-  - filters: [web-js]
+  - filters: [web-js, web-java]
     link: 'https://paytm.com'
     name: Paytm Scratch Card
     tags: [nodejs, java, '@paytm']

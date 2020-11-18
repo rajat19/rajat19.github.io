@@ -73,15 +73,21 @@ $(window).load(function() {
 		/*Filterd portfolio*/
 		$('.filter li a').on("click", function(e){
 			e.preventDefault();
+			var isAlreadyActive = $(this).hasClass('active');
+			if (isAlreadyActive) {
+				$(this).removeClass('active');
+				$(this).closest('.works').find('.item').show();
+				return;
+			}
 			$(this).addClass('active');
 			$(this).parent().siblings().find('a').removeClass('active');
 			var filters = $(this).attr('data-filter');
-			$(this).closest('.works').find('.item').removeClass('disable');
+			$(this).closest('.works').find('.item').show();
 			if (filters !== 'all') {
 				var selected =  $(this).closest('.works').find('.item');
 				for(var i = 0; i < selected.length; i++){
 					if (!selected.eq(i).hasClass(filters)) {
-						selected.eq(i).addClass('disable');
+						selected.eq(i).hide();
 					}
 				}
 			}

@@ -45,6 +45,8 @@ skills:
         percent: 78
       - skill: Aerospike
         percent: 84
+        icon: aerospike
+        color: '#B0252A'
   - name: tools
     heading: Tools
     color: '#33373d'
