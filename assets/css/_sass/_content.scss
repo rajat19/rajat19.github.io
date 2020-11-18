@@ -917,6 +917,9 @@ svg.skill-java {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    min-height: 210px;
+    max-height: 210px;
+    width: auto;
 }
 
 
@@ -1435,9 +1438,6 @@ span.meta-date{
 
 
 
-
-
-
 /*------------------------ End contact section ------------------------*/
 
 
@@ -1464,7 +1464,7 @@ span.meta-date{
 	.contact-info li:last-child{padding-bottom:0;}
 	.contact-info li .ico{top:-80px;}
 	.img-profile .name-profile {display:none;}
-	
+	.project-img {max-height: 210px !important;width: auto !important; min-height: 0px;}
 }
 
 
@@ -1495,7 +1495,7 @@ span.meta-date{
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
 	.nopr {padding-right: 15px;}
-	.main-nav.tabbed ul li{float:left;width:25%;border-right:1px solid #26292e;border-bottom:none;}
+	.main-nav.tabbed ul li{float:left;width:33%;border-right:1px solid #26292e;border-bottom:none;}
 	.main-nav.tabbed ul li a{font-size:0;}
 	.main-nav.tabbed ul li:last-child{border-right:none;border-bottom:none;}
 	.main-nav.tabbed ul li a i {left: 0;text-align: center;width: 100%;}
@@ -1519,7 +1519,7 @@ span.meta-date{
 	.contact-info li:last-child{padding-bottom:0;}
 	.contact-info li .ico{top:-80px;}
 	.block-quote blockquote{padding-right:0;}
-	
+	.project-img {max-height: 210px !important;width: auto !important; min-height: 0px;}
 }
 
 
@@ -1529,7 +1529,7 @@ span.meta-date{
 	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
 	.nopr {padding-right: 15px;}
 	.main-nav.tabbed, .main-nav.tabbed li {background: #33373d;}
-	.main-nav.tabbed ul li{float:left;width:25%;border-right:1px solid #26292e;border-bottom:none;}
+	.main-nav.tabbed ul li{float:left;width:33%;border-right:1px solid #26292e;border-bottom:none;}
 	.main-nav.tabbed ul li a{font-size:0;}
 	.main-nav.tabbed ul li:last-child{border-right:none;border-bottom:none;}
 	.main-nav.tabbed ul li a i {left: 0;text-align: center;width: 100%;}
@@ -1568,7 +1568,7 @@ span.meta-date{
 	.contact-form .submit, .reply-form .submit{position:static;border:none;width:100%;}
 	.button .but{margin-bottom:10px;}
 	.block-quote blockquote{padding-right:0;}
-	
+	.project-img {max-height: 210px !important;width: auto !important; min-height: 0px;}
 }
 
 /* -------------------- End media queries -------------------- */
