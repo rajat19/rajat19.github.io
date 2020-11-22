@@ -52,8 +52,8 @@ skills:
     color: '#33373d'
     progress:
       - skill: Apache Storm
-        icon: apache
-        color: '#D22128'
+        icon: storm
+        color: '#2c6ba3'
         percent: 88
       - skill: Apache Kafka
         icon: apachekafka
