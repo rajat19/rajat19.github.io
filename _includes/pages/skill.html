@@ -10,7 +10,9 @@
                             <div style="display: flex;">
                                 <h4 style="color: {{ progress.color }}">{{ progress.skill }}</h4>
                                 {% if progress.icon %}
-                                <img class="skill-icon lazy" data-src="{{ site.github.url }}/assets/img/skills/{{ progress.icon }}.svg"/>
+                                    {% for icon in progress.icon %}
+                                        <img class="skill-icon lazy" data-src="{{ site.github.url }}/assets/img/skills/{{ icon }}.svg"/>
+                                    {% endfor %}
                                 {% endif %}
                             </div>
                             <div class="progress">
