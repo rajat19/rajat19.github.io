@@ -10,7 +10,7 @@ menu:
     icon: user
   - name: Skills
     identifier: skill
-    h1: professional skills
+    h1: skills
     icon: code
   - name: Projects
     identifier: projects

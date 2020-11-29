@@ -1,27 +1,55 @@
 skills:
-  - name: backend
-    heading: Software Development
-    color: '#cd5353'
+  - name: framework
+    heading: Languages
+    color: 'red'
+    progress:
+      - skill: Python
+        icon: python
+        color: '#3776AB'
+        percent: 92
+      - skill: Javascript
+        icon: javascript
+        color: '#F7DF1E'
+        percent: 98
+      - skill: Typescript
+        icon: typescript
+        color: '#007ACC'
+        percent: 90
+      - skill: Java
+        icon: java
+        color: '#007396'
+        percent: 92
+      - skill: C++
+        icon: cpp
+        color: '#00599C'
+        percent: 84
+      - skill: Php
+        icon: php
+        color: '#777BB4'
+        percent: 83
+  - name: framework
+    heading: Frameworks
+    color: 'blue'
     progress:
       - skill: Node JS (Express and Koa)
         icon: node-dot-js
         color: '#339933'
         percent: 97
-      - skill: Java Spring
-        icon: [java, spring]
-        color: '#007396'
-        percent: 92
-      - skill: Python
-        icon: [python, django]
-        color: '#3776AB'
-        percent: 92
-      - skill: Typescript
-        icon: typescript
-        color: '#007ACC'
-        percent: 90
+      - skill: Spring
+        icon: spring
+        color: '#6DB33F'
+        percent: 86
+      - skill: Django
+        icon: django
+        color: '#092E20'
+        percent: 85
+      - skill: Laravel
+        icon: laravel
+        color: '#FF2D20'
+        percent: 75
   - name: datastores
-    heading: Data Stores
-    color: '#5d7029'
+    heading: DataStores
+    color: 'green'
     progress:
       - skill: Mysql
         icon: mysql
@@ -39,17 +67,13 @@ skills:
         icon: apachecassandra
         color: '#1287B1'
         percent: 85
-      - skill: Prometheus
-        icon: prometheus
-        color: '#E6522C'
-        percent: 78
       - skill: Aerospike
         percent: 84
         icon: aerospike
         color: '#B0252A'
-  - name: tools
-    heading: Tools
-    color: '#33373d'
+  - name: processing
+    heading: Processing
+    color: 'black'
     progress:
       - skill: Apache Storm
         icon: storm
@@ -63,10 +87,18 @@ skills:
         icon: rabbitmq
         color: '#FF6600'
         percent: 86
-      - skill: Heroku
-        icon: heroku
-        color: '#430098'
-        percent: 89
+      - skill: Debezium
+        icon: debezium
+        color: '#48bfe0'
+        percent: 77
+  - name: monitoring
+    heading: Monitoring
+    color: 'red'
+    progress:
+      - skill: Prometheus
+        icon: prometheus
+        color: '#E6522C'
+        percent: 78
       - skill: Grafana
         icon: grafana
         color: '#F46800'
@@ -75,15 +107,3 @@ skills:
         icon: kibana
         color: '#005571'
         percent: 81
-  # - name: assets
-  #   heading: Assets
-  #   color: '#d3e0ed'
-  #   progress:
-  #     - skill: Responsible
-  #       percent: 90
-  #     - skill: Leader
-  #       percent: 92
-  #     - skill: Multitasking
-  #       percent: 95
-  #     - skill: Creative
-  #       percent: 83
