@@ -1,9 +1,14 @@
 experiences:
   - company: Paytm
-    role: Software Engineer
-    start: Aug 2018
+    role: [Senior Software Engineer]
+    start: [Dec 2020]
     current: true
-    details: Working with tiered reward team of paytm
+    details: Working with multi-tiered reward team of paytm
+  - company: Paytm
+    role: [Software Engineer]
+    start: [Aug 2018]
+    current: true
+    details: Working with multi-tiered reward team of paytm
   - company: Smartprix
     role: Software Developer
     start: Jun 2017
