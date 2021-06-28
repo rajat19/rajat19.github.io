@@ -4,7 +4,7 @@ My portfolio is completely build using jekyll
 
 **Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more.**
 
-Earlier used php for dynamic content loading. Check out [Lebenslauf](https//github.com/rajat19/Lebenslauf).
+Earlier used php for dynamic content loading. Check out [Lebenslauf](https://github.com/rajat19/Lebenslauf).
 
 Learn more about jekyll using [official documentation](https://jekyllrb.com/docs/)
 
