@@ -63,6 +63,10 @@ skills:
         icon: rabbitmq
         color: '#FF6600'
         percent: 86
+      - skill: Apache Spark
+        icon: apachespark
+        color: '#E25A1C'
+        percent: 79
       - skill: Heroku
         icon: heroku
         color: '#430098'
