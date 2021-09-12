@@ -187,8 +187,8 @@ $(window).load(function() {
 				}
 			],
 			
-			lat = 28.5737,
-			lng = 77.3820,
+			lat = 26.472681,
+			lng = 80.256918,
 			customMap = new google.maps.StyledMapType(styles, {name: 'Styled Map'}),
 			
 			mapOptions = {

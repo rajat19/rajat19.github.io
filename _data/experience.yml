@@ -1,14 +1,19 @@
 experiences:
+  - company: Myntra
+    role: Senior Software Engineer
+    start: Aug 2021
+    current: true
+    details: Working with storefront team that handles all the traffic for myntra
   - company: Paytm
     role: Senior Software Engineer
     start: Dec 2020
-    current: true
-    details: Working with multi-tiered reward team of paytm
+    end: Jul 2021
+    details: Worked with multi-tiered reward team of paytm
   - company: Paytm
     role: Software Engineer
     start: Aug 2018
     end: Dec 2020
-    details: Working with multi-tiered reward team of paytm
+    details: Worked with multi-tiered reward team of paytm
   - company: Smartprix
     role: Software Developer
     start: Jun 2017

@@ -19,6 +19,10 @@ skills:
         icon: typescript
         color: '#007ACC'
         percent: 90
+      - skill: Golang
+        icon: go
+        color: '#00ADD8'
+        percent: 80
   - name: datastores
     heading: Data Stores
     color: '#5d7029'
