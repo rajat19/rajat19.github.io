@@ -1,8 +1,13 @@
 experiences:
+  - company: Indeed.com
+    role: Senior Software Engineer
+    start: May 2022
+    current: true
+    details: Working with International business unit on Indian market for low skilled groups
   - company: Myntra
     role: Senior Software Engineer
     start: Aug 2021
-    current: true
+    end: Apr 2022
     details: Working with storefront team that handles all the traffic for myntra
   - company: Paytm
     role: Senior Software Engineer
