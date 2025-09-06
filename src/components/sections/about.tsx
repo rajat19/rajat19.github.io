@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 const highlights = [

@@ -1,11 +1,11 @@
 import { Navigation } from "@/components/navigation"
-import { HeroSection } from "@/components/hero-section"
-import { AboutSection } from "@/components/about-section"
-import { EducationSection } from "@/components/education-section"
-import { ExperienceSection } from "@/components/experience-section"
-import { ProjectsSection } from "@/components/projects-section"
-import { SkillsSection } from "@/components/skills-section"
-import { ContactSection } from "@/components/contact-section"
+import { HeroSection } from "@/components/sections/hero"
+import { AboutSection } from "@/components/sections/about"
+import { EducationSection } from "@/components/sections/education"
+import { ExperienceSection } from "@/components/sections/experience"
+import { ProjectsSection } from "@/components/sections/projects"
+import { SkillsSection } from "@/components/sections/skills"
+import { ContactSection } from "@/components/sections/contact"
 
 const Index = () => {
   return (

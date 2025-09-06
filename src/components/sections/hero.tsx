@@ -1,6 +1,5 @@
 import { Github, Linkedin, Twitter, Mail, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useState, useEffect } from "react"
 import profilePhoto from "@/assets/profile.png"
 import resumePdf from "@/assets/pdf/RajatResume.pdf"
 

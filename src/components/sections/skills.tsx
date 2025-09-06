@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
-import { Code, Server, Database, Cloud, Smartphone, Users } from "lucide-react"
+import { Server, Database, Cloud } from "lucide-react"
 
 // Import skill icons
 import nodejsIcon from "@/assets/skills/node-dot-js.svg"

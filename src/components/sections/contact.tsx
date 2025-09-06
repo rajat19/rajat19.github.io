@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Github, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, MapPin } from "lucide-react"
 
 const contactInfo = [
   {
