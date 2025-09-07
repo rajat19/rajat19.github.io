@@ -16,7 +16,7 @@ export function SkillsSection() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {skillCategories.map((category, index) => (
             <Card key={index} className="portfolio-card glow-on-hover">
               <div className="space-y-6">
@@ -38,7 +38,7 @@ export function SkillsSection() {
                           <span className="font-medium">{skill.name}</span>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <span className="text-sm text-muted-foreground">{skill.years}</span>
+                          <span className="text-sm text-muted-foreground">{skill.years} years</span>
                           <Badge variant="outline" className="text-xs border-primary/20 text-primary">
                             {skill.level}%
                           </Badge>
