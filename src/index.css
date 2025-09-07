@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System - Red Theme with Professional Feel */
+
+@layer base {
+  :root {
+    /* Light Mode - Warm, professional palette */
+    --background: 0 0% 99%;
+    --foreground: 0 0% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    /* Red-based primary palette */
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 0 72% 65%;
+    --primary-muted: 0 72% 51% / 0.1;
+
+    /* Sophisticated secondary palette */
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 14 100% 96%;
+    --accent-foreground: 0 72% 51%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 72% 51%;
+
+    /* Design tokens for portfolio */
+    --hero-gradient: linear-gradient(135deg, hsl(0 72% 51%), hsl(14 100% 65%));
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --skill-gradient: linear-gradient(90deg, hsl(0 72% 51%), hsl(14 100% 65%));
+    
+    /* Shadows with red tint */
+    --shadow-sm: 0 1px 2px hsl(0 72% 51% / 0.05);
+    --shadow-md: 0 4px 6px hsl(0 72% 51% / 0.07), 0 2px 4px hsl(0 72% 51% / 0.03);
+    --shadow-lg: 0 10px 15px hsl(0 72% 51% / 0.1), 0 4px 6px hsl(0 72% 51% / 0.05);
+    --shadow-glow: 0 0 20px hsl(0 72% 51% / 0.3);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode - Professional dark with red accents */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Red theme for dark mode */
+    --primary: 0 72% 58%;
+    --primary-foreground: 0 0% 10%;
+    --primary-glow: 0 72% 70%;
+    --primary-muted: 0 72% 58% / 0.15;
+
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 72% 58%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 72% 58%;
+
+    /* Dark mode design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(0 72% 58%), hsl(14 100% 70%));
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 12%), hsl(0 0% 8%));
+    --skill-gradient: linear-gradient(90deg, hsl(0 72% 58%), hsl(14 100% 70%));
+    
+    /* Dark shadows with red glow */
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.5);
+    --shadow-md: 0 4px 6px hsl(0 0% 0% / 0.3), 0 2px 4px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 10px 15px hsl(0 0% 0% / 0.3), 0 4px 6px hsl(0 0% 0% / 0.2);
+    --shadow-glow: 0 0 25px hsl(0 72% 58% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero button variant */
+  .hero-button {
+    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 hover:shadow-primary/25;
+  }
+
+  /* Card with custom gradient */
+  .portfolio-card {
+    @apply bg-card rounded-xl p-4 md:p-6 shadow-md hover:shadow-lg transition-all duration-300;
+    background: var(--card-gradient);
+  }
+
+  /* Skill bar animation */
+  .skill-bar {
+    @apply h-2 rounded-full relative overflow-hidden bg-muted;
+  }
+
+  .skill-progress {
+    @apply h-full rounded-full transition-all duration-1000 ease-out;
+    background: var(--skill-gradient);
+  }
+
+  /* Glowing effect for interactive elements */
+  .glow-on-hover {
+    @apply transition-all duration-300 hover:shadow-glow;
+  }
+
+  /* Smooth reveal animation */
+  .reveal {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .reveal.active {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Social link hover effects */
+  .social-link {
+    @apply w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-muted-foreground transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-glow;
+  }
+}

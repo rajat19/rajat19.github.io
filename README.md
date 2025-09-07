@@ -1,11 +1,31 @@
-## rajat19.github.io
+# rajat19.github.io
 
-My portfolio is completely build using jekyll
+Personal portfolio built with React, TypeScript, Vite and Tailwind (shadcn/ui).
 
-**Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more.**
+## Local development
 
-Earlier used php for dynamic content loading. Check out [Lebenslauf](https://github.com/rajat19/Lebenslauf).
+```bash
+npm i
+npm run dev
+```
 
-Learn more about jekyll using [official documentation](https://jekyllrb.com/docs/)
+## Build
 
-If you want to create your profile similar to this. You need to just make changes in [_data](_data/) folder which contains all dynamic generated contents. Try it out !
+```bash
+npm run build
+npm run preview
+```
+
+## Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## Editing content
+
+- React data lives in `src/data/` (e.g. `projects.ts`, `skills.ts`).
+- Static assets live in `src/assets/`.
+- Sections are in `src/components/` and composed in `src/pages/Index.tsx`.
+
+Legacy Jekyll data is retained under `_data/` for reference.
