@@ -59,8 +59,8 @@ export const projects: IProject[] = [
         ],
         filters: ['web-js'],
         links: {
-            live: 'https://geek-paradox.github.io/wander-month-map/',
-            github: 'geek-paradox/wander-month-map',
+            live: 'https://rajat19.github.io/cracking-interview/',
+            github: 'rajat19/cracking-interview',
         }
     },
     {
@@ -197,27 +197,27 @@ export const projects: IProject[] = [
             github: 'rajat19/jsniper',
         }
     },
-    {
-        title: 'Indeed Talent Scout',
-        description: 'OpenAI and Langchain based AI assistant that helps you find the best candidates for your job openings.',
-        image: 'talent-scout',
-        skills: [
-            BackendSkills.Python,
-            BackendSkills.TypeScript,
-            FrontendSkills.React,
-            ToolsSkills.Datadog,
-            ToolsSkills.OpenAI,
-            ToolsSkills.Langsmith,
-        ],
-        filters: ['web-py', 'web-js'],
-        links: {
-            live: 'https://employers.indeed.com',
-        },
-        organization: {
-            name: "Indeed",
-            link: "https://indeed.com"
-        }
-    },
+    // {
+    //     title: 'Indeed Talent Scout',
+    //     description: 'OpenAI and Langchain based AI assistant that helps you find the best candidates for your job openings.',
+    //     image: 'talent-scout',
+    //     skills: [
+    //         BackendSkills.Python,
+    //         BackendSkills.TypeScript,
+    //         FrontendSkills.React,
+    //         ToolsSkills.Datadog,
+    //         ToolsSkills.OpenAI,
+    //         ToolsSkills.Langsmith,
+    //     ],
+    //     filters: ['web-py', 'web-js'],
+    //     links: {
+    //         live: 'https://employers.indeed.com',
+    //     },
+    //     organization: {
+    //         name: "Indeed",
+    //         link: "https://indeed.com"
+    //     }
+    // },
     {
         title: "Paytm Cashback Offers",
         description: "Multi-tiered reward system handling millions of transactions daily with real-time cashback distribution and fraud detection.",
