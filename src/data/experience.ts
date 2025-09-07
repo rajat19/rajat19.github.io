@@ -1,9 +1,11 @@
+import { BackendSkills, DatabaseSkills, FrontendSkills, ToolsSkills } from "@/data/skills";
+
 export interface ExperienceRole {
   position: string;
   period: string;
   description?: string;
   achievements?: string[];
-  technologies?: string[];
+  technologies?: (BackendSkills | DatabaseSkills | ToolsSkills | FrontendSkills)[];
 }
 
 export interface ExperienceCompany {
@@ -16,7 +18,7 @@ export interface ExperienceCompany {
 export const experiences: ExperienceCompany[] = [
   {
     company: "Indeed.com",
-    location: "Remote",
+    location: "Hyderabad, India",
     icon: "https://www.indeed.com/favicon.ico",
     roles: [
       {
@@ -30,7 +32,14 @@ export const experiences: ExperienceCompany[] = [
           "Drive Backlog grooming and sprint planning for the team",
           "Mentored engineers and drove engineering excellence",
         ],
-        technologies: ["Java", "Spring Boot", "MySQL", "AWS", "Microservices"],
+        technologies: [
+          BackendSkills.Java, 
+          BackendSkills.SpringBoot,
+          BackendSkills.Python,
+          FrontendSkills.React,
+          DatabaseSkills.MongoDB,
+          ToolsSkills.OpenAI,
+        ],
       },
       {
         position: "Senior Software Engineer",
@@ -42,7 +51,13 @@ export const experiences: ExperienceCompany[] = [
           "Spearheaded engineering excellence efforts to enhance code quality and system efficiency",
           "Designed and Developed the Indian language detection and indexing module for jobs on Indeed using n-grams probabilistic models",
         ],
-        technologies: ["Java", "Spring Boot", "MySQL", "AWS", "Microservices"],
+        technologies: [
+          BackendSkills.Java, 
+          BackendSkills.SpringBoot,
+          FrontendSkills.React,
+          DatabaseSkills.MongoDB,
+          ToolsSkills.Kafka,
+        ],
       },
     ],
   },
@@ -61,7 +76,11 @@ export const experiences: ExperienceCompany[] = [
           "Implemented caching strategies reducing page load times",
           "Enhanced product discovery and recommendation systems",
         ],
-        technologies: ["Java", "Spring", "Redis", "MySQL", "Kafka"],
+        technologies: [
+          BackendSkills.Golang,
+          DatabaseSkills.Redis,
+          DatabaseSkills.Postgres,
+        ],
       },
     ],
   },
@@ -79,7 +98,16 @@ export const experiences: ExperienceCompany[] = [
           "Built cashback and scratch card features",
           "Received Paytm Rockstar award for top performance",
         ],
-        technologies: ["Node.js", "Java", "MongoDB", "Redis", "Kafka"],
+        technologies: [
+          BackendSkills.NodeJS,
+          BackendSkills.Java,
+          DatabaseSkills.MySQL,
+          DatabaseSkills.MongoDB,
+          DatabaseSkills.Cassandra,
+          DatabaseSkills.Redis,
+          ToolsSkills.Kafka,
+          ToolsSkills.Storm,
+        ],
       },
       {
         position: "Software Engineer",
@@ -90,7 +118,13 @@ export const experiences: ExperienceCompany[] = [
           "Implemented fraud detection mechanisms for reward systems",
           "Contributed to system architecture decisions",
         ],
-        technologies: ["Node.js", "Java", "MongoDB", "MySQL", "Microservices"],
+        technologies: [
+          BackendSkills.NodeJS,
+          BackendSkills.Java,
+          DatabaseSkills.MySQL,
+          ToolsSkills.Kafka,
+          ToolsSkills.Storm,
+        ],
       },
     ],
   },
@@ -109,7 +143,13 @@ export const experiences: ExperienceCompany[] = [
           "Developed mobile app for Smartprix platform",
           "Implemented real-time price tracking systems",
         ],
-        technologies: ["Node.js", "Vue.js", "PHP", "MySQL", "Android"],
+        technologies: [
+          BackendSkills.NodeJS,
+          FrontendSkills.MarkoJS,
+          FrontendSkills.Vue,
+          BackendSkills.PHP,
+          DatabaseSkills.Postgres,
+        ],
       },
     ],
   },

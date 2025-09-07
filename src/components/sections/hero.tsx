@@ -1,14 +1,8 @@
-import { Github, Linkedin, Twitter, Mail, Download } from "lucide-react"
+import { Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import profilePhoto from "@/assets/profile.png"
 import resumePdf from "@/assets/pdf/RajatResume.pdf"
-
-const socialLinks = [
-  { icon: Github, href: "https://github.com/rajat19", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/rajatsriv19", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com/evilj0ker", label: "Twitter" },
-  { icon: Mail, href: "mailto:rajatsri94@gmail.com", label: "Email" },
-]
+import { socialLinks } from "@/data/contact"
 
 export function HeroSection() {
   const displayText = "Staff Software Engineer"

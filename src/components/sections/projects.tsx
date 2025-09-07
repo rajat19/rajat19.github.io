@@ -21,9 +21,9 @@ const resolveProjectImage = (imageName: string): string => {
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 bg-secondary/30">
+    <section id="projects" className="py-5 md:py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl font-bold tracking-tight mb-4">Featured Projects</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             A showcase of complex, scalable applications that demonstrate my expertise in full-stack development and system architecture.

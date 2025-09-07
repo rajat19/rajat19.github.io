@@ -2,47 +2,11 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Github, Linkedin, Twitter, Mail, MapPin } from "lucide-react"
-
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "rajatsri94@gmail.com",
-    href: "mailto:rajatsri94@gmail.com",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "Lucknow, India",
-    href: "https://maps.google.com/?q=Lucknow,+India",
-  }
-]
-
-const socialLinks = [
-  {
-    icon: Github,
-    label: "GitHub",
-    value: "@rajat19",
-    href: "https://github.com/rajat19"
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "/in/alexjohnson",
-    href: "https://linkedin.com/in/rajatsriv19"
-  },
-  {
-    icon: Twitter,
-    label: "Twitter",
-    value: "@evilj0ker",
-    href: "https://twitter.com/evilj0ker"
-  }
-]
+import { contactInfo, socialLinks } from "@/data/contact"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
+    <section id="contact" className="py-5 md:py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold tracking-tight mb-4">Let's Connect</h2>
@@ -64,7 +28,7 @@ export function ContactSection() {
 
             {/* Contact Details */}
             <div className="space-y-4">
-              {contactInfo.map((contact, index) => (
+                {contactInfo.map((contact, index) => (
                 <a
                   key={index}
                   href={contact.href}

@@ -24,7 +24,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-border">
         <div className="container mx-auto px-6 text-center text-muted-foreground">
-          <p>&copy; 2024 Alex Johnson. Built with React, TypeScript, and Tailwind CSS.</p>
+          <p>&copy; {new Date().getFullYear()} Rajat Srivastava. Built with React, TypeScript, Tailwind CSS.</p>
         </div>
       </footer>
     </div>

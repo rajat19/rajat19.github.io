@@ -5,9 +5,9 @@ import { education } from "@/data/education"
 
 export function EducationSection() {
   return (
-    <section id="education" className="py-20 bg-muted/20">
+    <section id="education" className="py-5 md:py-20 bg-muted/20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl font-bold tracking-tight mb-4">Education</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Academic foundation that shaped my technical expertise and problem-solving approach.
@@ -16,7 +16,7 @@ export function EducationSection() {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-1/2 md:left-1.5 top-6 bottom-0 w-0.5 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/20" />
+          <div className="absolute left-2 md:left-1.5 top-6 bottom-0 w-0.5 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/20" />
           
           <div className="space-y-8">
             {education.map((edu, index) => (

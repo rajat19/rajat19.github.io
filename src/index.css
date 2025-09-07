@@ -145,7 +145,7 @@
 
   /* Card with custom gradient */
   .portfolio-card {
-    @apply bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300;
+    @apply bg-card rounded-xl p-4 md:p-6 shadow-md hover:shadow-lg transition-all duration-300;
     background: var(--card-gradient);
   }
 
