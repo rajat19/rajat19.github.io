@@ -54,12 +54,30 @@ export const projects: IProject[] = [
             BackendSkills.TypeScript,
             FrontendSkills.NextJS,
             FrontendSkills.Tailwind,
+            FrontendSkills.Vite,
             DatabaseSkills.Firebase,
         ],
         filters: ['web-js'],
         links: {
             live: 'https://geek-paradox.github.io/wander-month-map/',
             github: 'geek-paradox/wander-month-map',
+        }
+    },
+    {
+        title: 'SplitBill',
+        description: 'An alternative to Splitwise that allows you to split bills with your friends and family.',
+        image: 'splitbill',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.React,
+            FrontendSkills.Tailwind,
+            FrontendSkills.Vite,
+            DatabaseSkills.Firebase,
+        ],
+        filters: ['web-js'],
+        links: {
+            live: 'https://geek-paradox.github.io/split-bill/',
+            github: 'geek-paradox/split-bill',
         }
     },
     {
@@ -80,7 +98,10 @@ export const projects: IProject[] = [
         image: 'portfolio',
         description: 'My personal portfolio showcasing my projects, skills, and experiences.',
         skills: [
-            FrontendSkills.Jekyll,
+            BackendSkills.TypeScript,
+            FrontendSkills.React,
+            FrontendSkills.Tailwind,
+            FrontendSkills.Vite,
         ],
         filters: ['web-js'],
         links: {
@@ -133,17 +154,17 @@ export const projects: IProject[] = [
     {
         title: 'Medical Portfolio',
         description: 'A webapp that generates a portfolio for doctors and clinics.',
-        image: 'medical-portfolio',
+        image: 'med-portfolio',
         skills: [
-            BackendSkills.Python,
-            FrontendSkills.React,
+            BackendSkills.TypeScript,
+            FrontendSkills.NextJS,
             FrontendSkills.Tailwind,
             DatabaseSkills.Firebase,
         ],
         filters: ['web-js'],
         links: {
-            live: 'https://rajat19.github.io/medical-portfolio/',
-            github: 'rajat19/medical-portfolio',
+            live: 'https://rajat19.github.io/med-portfolio-studio/',
+            github: 'rajat19/med-portfolio-studio',
         }
     },
     {
@@ -151,6 +172,7 @@ export const projects: IProject[] = [
         description: 'A webapp that compares and discovers best card for your use case',
         image: 'card-assist',
         skills: [
+            BackendSkills.TypeScript,
             FrontendSkills.React,
             DatabaseSkills.Firebase,
             ToolsSkills.Gemini,
@@ -162,11 +184,26 @@ export const projects: IProject[] = [
         }
     },
     {
+        title: 'Jsniper',
+        description: 'Basic templating script to start your coding with typescript/javascript',
+        image: 'jsniper',
+        skills: [
+            BackendSkills.TypeScript,
+            BackendSkills.NodeJS,
+        ],
+        filters: ['web-js'],
+        links: {
+            live: 'https://rajat19.github.io/jsniper/',
+            github: 'rajat19/jsniper',
+        }
+    },
+    {
         title: 'Indeed Talent Scout',
         description: 'OpenAI and Langchain based AI assistant that helps you find the best candidates for your job openings.',
         image: 'talent-scout',
         skills: [
             BackendSkills.Python,
+            BackendSkills.TypeScript,
             FrontendSkills.React,
             ToolsSkills.Datadog,
             ToolsSkills.OpenAI,
@@ -306,4 +343,22 @@ export const projects: IProject[] = [
             link: 'https://sysbiome.com'
         }
     },
+    {
+        title: 'Timetable Management',
+        description: 'Website for colleges to manage the faculty timetable',
+        image: 'timetable',
+        skills: [
+            BackendSkills.PHP,
+            DatabaseSkills.MySQL,
+        ],
+        filters: ['web-php'],
+        links: {
+            live: 'http://paradox.eu5.org',
+            github: 'rajat19/Timetable',
+        },
+        organization: {
+            name: 'Ajay Kumar Garg Engineering College',
+            link: 'https://www.akgec.ac.in/'
+        }
+    }
 ];

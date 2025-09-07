@@ -30,15 +30,15 @@ export function ProjectsSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 gap-8 items-stretch">
           {projects.map((project, index) => (
-            <Card key={index} className="portfolio-card glow-on-hover overflow-hidden group">
+            <Card key={index} className="portfolio-card glow-on-hover overflow-hidden group h-full flex flex-col relative">
               {/* Project Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden flex items-center justify-center">
                 <img
                   src={resolveProjectImage(project.image)}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                 {project.metrics && (
@@ -55,7 +55,7 @@ export function ProjectsSection() {
                 )}
               </div>
 
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-4 flex flex-col pb-16">
                 {/* Title and Description */}
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
@@ -111,7 +111,7 @@ export function ProjectsSection() {
                 )}
 
                 {/* Action Buttons */}
-                <div className="flex space-x-2 pt-2">
+                <div className="flex space-x-2 pt-2 absolute inset-x-6 bottom-6">
                   {project.links.live && (
                       <Button variant="outline" size="sm" className="flex-1" asChild>
                         <a href={project.links.live} target="_blank" rel="noopener noreferrer">
