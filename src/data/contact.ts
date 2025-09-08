@@ -1,14 +1,14 @@
-import { Github, Linkedin, Twitter, Mail, MapPin } from "lucide-react"
+import { LuGithub, LuLinkedin, LuTwitter, LuMail, LuMapPin } from "react-icons/lu"
 
 export const contactInfo = [
     {
-      icon: Mail,
+      icon: LuMail,
       label: "Email",
       value: "rajatsri94@gmail.com",
       href: "mailto:rajatsri94@gmail.com",
     },
     {
-      icon: MapPin,
+      icon: LuMapPin,
       label: "Location",
       value: "Lucknow, India",
       href: "https://maps.google.com/?q=Lucknow,+India",
@@ -17,19 +17,19 @@ export const contactInfo = [
   
 export const socialLinks = [
     {
-      icon: Github,
+      icon: LuGithub,
       label: "GitHub",
       value: "@rajat19",
       href: "https://github.com/rajat19"
     },
     {
-      icon: Linkedin,
+      icon: LuLinkedin,
       label: "LinkedIn",
       value: "/in/rajatsriv19",
       href: "https://linkedin.com/in/rajatsriv19"
     },
     {
-      icon: Twitter,
+      icon: LuTwitter,
       label: "Twitter",
       value: "@evilj0ker",
       href: "https://twitter.com/evilj0ker"

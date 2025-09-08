@@ -1,4 +1,4 @@
-import { Download } from "lucide-react"
+import { LuDownload } from "react-icons/lu"
 import { Button } from "@/components/ui/button"
 import profilePhoto from "@/assets/profile.png"
 import resumePdf from "@/assets/pdf/RajatResume.pdf"
@@ -33,7 +33,7 @@ export function HeroSection() {
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
               <span className="block text-foreground">Rajat Srivastava</span>
-              <span className="block bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent min-h-[1.2em]">
+              <span className="block bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent min-h-[1.2em] pb-2">
                 {displayText}
                 <span className="animate-pulse">|</span>
               </span>
@@ -47,7 +47,7 @@ export function HeroSection() {
           <div className="flex flex-wrap justify-center gap-4">
             <Button className="hero-button group" asChild>
               <a href={resumePdf} download>
-                <Download className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
+                <LuDownload className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
                 Download Resume
               </a>
             </Button>

@@ -1,5 +1,5 @@
-import { Server, Database, Cloud, Monitor } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { LuServer, LuDatabase, LuCloud, LuMonitor } from "react-icons/lu";
+import type { IconType } from "react-icons";
 import nodejsIcon from "@/assets/skills/node-dot-js.svg";
 import javaIcon from "@/assets/skills/java.svg";
 import pythonIcon from "@/assets/skills/python.svg";
@@ -22,7 +22,6 @@ import flaskIcon from "@/assets/skills/flask.svg";
 import reactIcon from "@/assets/skills/react.svg";
 import astroIcon from "@/assets/skills/astro.svg";
 import jekyllIcon from "@/assets/skills/jekyll.svg";
-import viteIcon from "@/assets/skills/vite.svg";
 import nextjsIcon from "@/assets/skills/nextdotjs.svg";
 import tailwindIcon from "@/assets/skills/tailwindcss.svg";
 import bootstrapIcon from "@/assets/skills/bootstrap.svg";
@@ -93,14 +92,14 @@ export interface ISkill {
 
 export interface ISkillCategory {
     title: string;
-    icon: LucideIcon;
+    icon: IconType;
     skills: ISkill[];
 }
 
 export const skillCategories: ISkillCategory[] = [
     {
       title: "Backend Development",
-      icon: Server,
+      icon: LuServer,
       skills: [
         { name: BackendSkills.NodeJS, level: 97, years: 8, icon: nodejsIcon },
         { name: BackendSkills.TypeScript, level: 90, years: 7, icon: typescriptIcon },
@@ -113,7 +112,7 @@ export const skillCategories: ISkillCategory[] = [
     },
     {
       title: "Frontend Development",
-      icon: Monitor,
+      icon: LuMonitor,
       skills: [
         { name: FrontendSkills.React, level: 97, years: 6, icon: reactIcon },
         { name: FrontendSkills.NextJS, level: 84, years: 1, icon: nextjsIcon },
@@ -125,7 +124,7 @@ export const skillCategories: ISkillCategory[] = [
     },
     {
       title: "Data Stores", 
-      icon: Database,
+      icon: LuDatabase,
       skills: [
         { name: DatabaseSkills.MySQL, level: 95, years: 5, icon: mysqlIcon },
         { name: DatabaseSkills.MongoDB, level: 92, years: 6, icon: mongodbIcon },
@@ -137,7 +136,7 @@ export const skillCategories: ISkillCategory[] = [
     },
     {
       title: "Tools & Skills",
-      icon: Cloud,
+      icon: LuCloud,
       skills: [
         { name: ToolsSkills.Kafka, level: 90, years: 7, icon: kafkaIcon },
         { name: ToolsSkills.Storm, level: 88, years: 3, icon: stormIcon },

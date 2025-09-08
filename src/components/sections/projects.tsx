@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Star, GitFork } from "lucide-react"
+import { LuExternalLink, LuGithub, LuStar, LuGitFork } from "react-icons/lu"
 import { projects } from "@/data/projects"
 
 // Resolve project images via Vite glob import with fallback
@@ -44,11 +44,11 @@ export function ProjectsSection() {
                 {project.metrics && (
                   <div className="absolute top-4 right-4 flex space-x-2">
                     <Badge variant="secondary" className="bg-background/80 backdrop-blur-sm">
-                      <Star className="w-3 h-3 mr-1" />
+                      <LuStar className="w-3 h-3 mr-1" />
                       {project.metrics.stars}
                     </Badge>
                     <Badge variant="secondary" className="bg-background/80 backdrop-blur-sm">
-                      <GitFork className="w-3 h-3 mr-1" />
+                      <LuGitFork className="w-3 h-3 mr-1" />
                       {project.metrics.forks}
                     </Badge>
                   </div>
@@ -99,11 +99,11 @@ export function ProjectsSection() {
                       <span>{project.metrics.users} users</span>
                       <div className="flex space-x-4">
                     <span className="flex items-center space-x-1">
-                      <Star className="w-3 h-3" />
+                      <LuStar className="w-3 h-3" />
                       <span>{project.metrics.stars}</span>
                     </span>
                         <span className="flex items-center space-x-1">
-                      <GitFork className="w-3 h-3" />
+                      <LuGitFork className="w-3 h-3" />
                       <span>{project.metrics.forks}</span>
                     </span>
                       </div>
@@ -115,7 +115,7 @@ export function ProjectsSection() {
                   {project.links.live && (
                       <Button variant="outline" size="sm" className="flex-1" asChild>
                         <a href={project.links.live} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4 mr-2" />
+                          <LuExternalLink className="w-4 h-4 mr-2" />
                           Live Demo
                         </a>
                       </Button>
@@ -123,7 +123,7 @@ export function ProjectsSection() {
                   { project.links.github && (
                       <Button variant="outline" size="sm" className="flex-1" asChild>
                         <a href={`https://github.com/${project.links.github}`} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4 mr-2" />
+                          <LuGithub className="w-4 h-4 mr-2" />
                           Code
                         </a>
                       </Button>

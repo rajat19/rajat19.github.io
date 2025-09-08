@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, MapPin, GraduationCap, Award } from "lucide-react"
+import { LuCalendar, LuMapPin, LuGraduationCap, LuAward } from "react-icons/lu"
 import { education } from "@/data/education"
 
 export function EducationSection() {
@@ -36,11 +36,11 @@ export function EducationSection() {
                       </div>
                       <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-muted-foreground">
                         <div className="flex items-center space-x-2">
-                          <Calendar className="w-4 h-4" />
+                          <LuCalendar className="w-4 h-4" />
                           <span>{edu.period}</span>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <MapPin className="w-4 h-4" />
+                          <LuMapPin className="w-4 h-4" />
                           <span>{edu.location}</span>
                         </div>
                       </div>
@@ -52,7 +52,7 @@ export function EducationSection() {
                     {/* Achievements */}
                     <div className="space-y-3">
                       <h4 className="font-semibold flex items-center space-x-2">
-                        <Award className="w-4 h-4 text-primary" />
+                        <LuAward className="w-4 h-4 text-primary" />
                         <span>Achievements & Honors</span>
                       </h4>
                       <ul className="space-y-2">
@@ -68,7 +68,7 @@ export function EducationSection() {
                     {/* Relevant Courses */}
                     <div className="space-y-3">
                       <h4 className="font-semibold flex items-center space-x-2">
-                        <GraduationCap className="w-4 h-4 text-primary" />
+                        <LuGraduationCap className="w-4 h-4 text-primary" />
                         <span>Relevant Coursework</span>
                       </h4>
                       <div className="flex flex-wrap gap-2">

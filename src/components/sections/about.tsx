@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { about, highlights, personalDetails, quotes } from "@/data/about"
-import { GraduationCap, Star } from "lucide-react"
+import { LuGraduationCap, LuStar } from "react-icons/lu"
 
 export function AboutSection() {
   const { elementRef, isVisible } = useScrollAnimation()
@@ -22,7 +22,7 @@ export function AboutSection() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-semibold flex items-center space-x-2">
-                <Star className="w-4 h-4 text-primary" />
+                <LuStar className="w-4 h-4 text-primary" />
                 <span>Key Highlights</span>
               </h3>
               <ul className="space-y-3">
@@ -51,7 +51,7 @@ export function AboutSection() {
 
             <Card className="portfolio-card glow-on-hover">
               <h3 className="text-xl font-semibold mb-4 flex items-center space-x-2">
-                <GraduationCap className="w-4 h-4 text-primary" />
+                <LuGraduationCap className="w-4 h-4 text-primary" />
                 <span>Philosophy</span>
               </h3>
               <div className="space-y-4">

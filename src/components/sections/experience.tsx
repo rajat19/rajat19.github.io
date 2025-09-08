@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, MapPin } from "lucide-react"
+import { LuCalendar, LuMapPin } from "react-icons/lu"
 import { experiences } from "@/data/experience"
 
 export function ExperienceSection() {
@@ -42,7 +42,7 @@ export function ExperienceSection() {
                         <h3 className="text-2xl font-bold">{exp.company}</h3>
                         {exp.location && (
                           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                            <MapPin className="w-4 h-4" />
+                            <LuMapPin className="w-4 h-4" />
                             <span>{exp.location}</span>
                           </div>
                         )}
@@ -57,7 +57,7 @@ export function ExperienceSection() {
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                               <h4 className="text-xl font-semibold">{role.position}</h4>
                               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                                <Calendar className="w-4 h-4" />
+                                <LuCalendar className="w-4 h-4" />
                                 <span>{role.period}</span>
                               </div>
                             </div>
