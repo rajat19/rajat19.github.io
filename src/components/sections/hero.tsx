@@ -22,9 +22,11 @@ export function HeroSection() {
           <div className="flex justify-center mb-8">
             <div className="relative">
               <img
-                src={profilePhoto} 
-                alt="Rajat Srivastava" 
+                src={profilePhoto}
+                alt="Rajat Srivastava"
                 className="w-32 h-32 rounded-full border-4 border-primary/20 shadow-elegant hover:shadow-glow transition-all duration-300"
+                width={128}
+                height={128}
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-transparent" />
             </div>

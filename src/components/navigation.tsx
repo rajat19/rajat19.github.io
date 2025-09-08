@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react"
 import { ThemeToggle } from "./theme-toggle"
-import { LuUser, LuBriefcase, LuBookOpen, LuLayers, LuWrench, LuMail } from 'react-icons/lu';
+import { LuUser, LuBriefcase, LuMail, LuGraduationCap, LuSquareKanban, LuCpu } from 'react-icons/lu';
 
 const navItems = [
-  { name: "About", href: "#about" },
-  { name: "Education", href: "#education" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-  { name: "Skills", href: "#skills" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "#about", icon: LuUser },
+  { name: "Experience", href: "#experience", icon: LuBriefcase },
+  { name: "Education", href: "#education", icon: LuGraduationCap },
+  { name: "Projects", href: "#projects", icon: LuSquareKanban },
+  { name: "Skills", href: "#skills", icon: LuCpu },
+  { name: "Contact", href: "#contact", icon: LuMail },
 ]
 
 export function Navigation() {
@@ -76,14 +76,7 @@ export function Navigation() {
       {/* Mobile bottom nav (rendered outside the top nav) */}
       <div className="md:hidden fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="grid grid-cols-6 h-14 pb-[env(safe-area-inset-bottom)]">
-          {[
-            { name: "About", href: "#about", icon: LuUser },
-            { name: "Experience", href: "#experience", icon: LuBriefcase },
-            { name: "Education", href: "#education", icon: LuBookOpen },
-            { name: "Projects", href: "#projects", icon: LuLayers },
-            { name: "Skills", href: "#skills", icon: LuWrench },
-            { name: "Contact", href: "#contact", icon: LuMail },
-          ].map((item) => {
+          {navItems.map((item) => {
             const Icon = item.icon
             const isActive = activeSection === item.href.slice(1)
             return (

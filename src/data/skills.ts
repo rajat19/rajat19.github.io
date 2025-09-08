@@ -1,31 +1,29 @@
 import { LuServer, LuDatabase, LuCloud, LuMonitor } from "react-icons/lu";
-import type { IconType } from "react-icons";
-import nodejsIcon from "@/assets/skills/node-dot-js.svg";
-import javaIcon from "@/assets/skills/java.svg";
-import pythonIcon from "@/assets/skills/python.svg";
-import typescriptIcon from "@/assets/skills/typescript.svg";
-import goIcon from "@/assets/skills/go.svg";
-import mysqlIcon from "@/assets/skills/mysql.svg";
-import mongodbIcon from "@/assets/skills/mongodb.svg";
-import redisIcon from "@/assets/skills/redis.svg";
-import cassandraIcon from "@/assets/skills/apachecassandra.svg";
-import prometheusIcon from "@/assets/skills/prometheus.svg";
-import firebaseIcon from "@/assets/skills/firebase.svg";
-import kafkaIcon from "@/assets/skills/apachekafka.svg";
-import stormIcon from "@/assets/skills/storm.svg";
-import rabbitmqIcon from "@/assets/skills/rabbitmq.svg";
-import openaiIcon from "@/assets/skills/openai.svg";
-import sparkIcon from "@/assets/skills/apachespark.svg";
-import langgraphIcon from "@/assets/skills/langgraph.svg";
-import datadogIcon from "@/assets/skills/datadog.svg";
-import flaskIcon from "@/assets/skills/flask.svg";
-import reactIcon from "@/assets/skills/react.svg";
-import astroIcon from "@/assets/skills/astro.svg";
-import jekyllIcon from "@/assets/skills/jekyll.svg";
-import nextjsIcon from "@/assets/skills/nextdotjs.svg";
-import tailwindIcon from "@/assets/skills/tailwindcss.svg";
-import bootstrapIcon from "@/assets/skills/bootstrap.svg";
-import springBootIcon from "@/assets/skills/springboot.svg";
+import nodeIcon from '@/assets/skills/node-dot-js.svg';
+import typescriptIcon from '@/assets/skills/typescript.svg';
+import javaIcon from '@/assets/skills/java.svg';
+import springbootIcon from '@/assets/skills/springboot.svg';
+import pythonIcon from '@/assets/skills/python.svg';
+import flaskIcon from '@/assets/skills/flask.svg';
+import goIcon from '@/assets/skills/go.svg';
+import reactIcon from '@/assets/skills/react.svg';
+import nextjsIcon from '@/assets/skills/nextdotjs.svg';
+import astroIcon from '@/assets/skills/astro.svg';
+import jekyllIcon from '@/assets/skills/jekyll.svg';
+import tailwindIcon from '@/assets/skills/tailwindcss.svg';
+import bootstrapIcon from '@/assets/skills/bootstrap.svg';
+import mysqlIcon from '@/assets/skills/mysql.svg';
+import mongodbIcon from '@/assets/skills/mongodb.svg';
+import redisIcon from '@/assets/skills/redis.svg';
+import cassandraIcon from '@/assets/skills/apachecassandra.svg';
+import prometheusIcon from '@/assets/skills/prometheus.svg';
+import firebaseIcon from '@/assets/skills/firebase.svg';
+import kafkaIcon from '@/assets/skills/apachekafka.svg';
+import stormIcon from '@/assets/skills/storm.svg';
+import rabbitmqIcon from '@/assets/skills/rabbitmq.svg';
+import sparkIcon from '@/assets/skills/apachespark.svg';
+import openaiIcon from '@/assets/skills/openai.svg';
+import datadogIcon from '@/assets/skills/datadog.svg';
 
 export enum BackendSkills {
     NodeJS = "Node.js",
@@ -92,7 +90,7 @@ export interface ISkill {
 
 export interface ISkillCategory {
     title: string;
-    icon: IconType;
+    icon: any;
     skills: ISkill[];
 }
 
@@ -101,10 +99,10 @@ export const skillCategories: ISkillCategory[] = [
       title: "Backend Development",
       icon: LuServer,
       skills: [
-        { name: BackendSkills.NodeJS, level: 97, years: 8, icon: nodejsIcon },
+        { name: BackendSkills.NodeJS, level: 97, years: 8, icon: nodeIcon },
         { name: BackendSkills.TypeScript, level: 90, years: 7, icon: typescriptIcon },
         { name: BackendSkills.Java, level: 92, years: 8, icon: javaIcon },
-        { name: BackendSkills.SpringBoot, level: 92, years: 3, icon: springBootIcon },
+        { name: BackendSkills.SpringBoot, level: 92, years: 3, icon: springbootIcon },
         { name: BackendSkills.Python, level: 92, years: 6, icon: pythonIcon },
         { name: BackendSkills.Flask, level: 92, years: 2, icon: flaskIcon },
         { name: BackendSkills.Golang, level: 80, years: 2, icon: goIcon }
@@ -115,7 +113,7 @@ export const skillCategories: ISkillCategory[] = [
       icon: LuMonitor,
       skills: [
         { name: FrontendSkills.React, level: 97, years: 6, icon: reactIcon },
-        { name: FrontendSkills.NextJS, level: 84, years: 1, icon: nextjsIcon },
+        { name: FrontendSkills.NextJS, level: 84, years: 2, icon: nextjsIcon },
         { name: FrontendSkills.Astro, level: 80, years: 1, icon: astroIcon },
         { name: FrontendSkills.Jekyll, level: 90, years: 5, icon: jekyllIcon },
         { name: FrontendSkills.Tailwind, level: 92, years: 1, icon: tailwindIcon },
@@ -135,7 +133,7 @@ export const skillCategories: ISkillCategory[] = [
       ]
     },
     {
-      title: "Tools & Skills",
+      title: "Tools & Technologies",
       icon: LuCloud,
       skills: [
         { name: ToolsSkills.Kafka, level: 90, years: 7, icon: kafkaIcon },
@@ -143,7 +141,6 @@ export const skillCategories: ISkillCategory[] = [
         { name: ToolsSkills.RabbitMQ, level: 86, years: 5, icon: rabbitmqIcon },
         { name: ToolsSkills.Spark, level: 79, years: 5, icon: sparkIcon },
         { name: ToolsSkills.OpenAI, level: 85, years: 1, icon: openaiIcon },
-        { name: ToolsSkills.Langgraph, level: 80, years: 1, icon: langgraphIcon },
         { name: ToolsSkills.Datadog, level: 86, years: 6, icon: datadogIcon }
       ]
     }

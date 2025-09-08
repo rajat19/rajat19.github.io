@@ -16,7 +16,7 @@ export function SkillsSection() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
           {skillCategories.map((category, index) => (
             <Card key={index} className="portfolio-card glow-on-hover">
               <div className="space-y-6">
