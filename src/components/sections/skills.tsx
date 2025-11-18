@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { skillCategories } from "@/data/skills"
-import { certifications } from "@/data/certifications"
+import { recognitions } from "@/data/certifications"
 
 export function SkillsSection() {
   return (
@@ -56,9 +56,9 @@ export function SkillsSection() {
         {/* Certifications */}
         <Card className="portfolio-card">
           <div className="text-center space-y-6">
-            <h3 className="text-2xl font-bold">Professional Certifications</h3>
+            <h3 className="text-2xl font-bold">Awards & Recognitions</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {certifications.map((cert, index) => (
+              {recognitions.map((cert, index) => (
                 <div
                   key={index}
                   className="p-4 bg-primary/5 rounded-lg border border-primary/10 hover:border-primary/20 transition-colors duration-300"

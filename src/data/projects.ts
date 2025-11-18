@@ -31,6 +31,23 @@ export interface IProject {
 
 export const projects: IProject[] = [
     {
+        title: 'My Wedding Website',
+        description: 'Website for my wedding events',
+        image: 'wedding',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.React,
+            FrontendSkills.Tailwind,
+            FrontendSkills.Vite,
+            DatabaseSkills.Firebase,
+        ],
+        filters: ['web-js'],
+        links: {
+            live: 'https://rajat19.github.io/wedding/',
+            github: 'rajat19/wedding',
+        }
+    },
+    {
         title: 'Wander Weather',
         description: 'A map based webapp that shows users the best places to visit, temperature and rainfall data for selected country and month.',
         image: 'wander-weather',
