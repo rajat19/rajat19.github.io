@@ -48,7 +48,7 @@ export const projects: IProject[] = [
         }
     },
     {
-        title: 'Wander Weather',
+        title: 'Wanderer',
         description: 'A map based webapp that shows users the best places to visit, temperature and rainfall data for selected country and month.',
         image: 'wander-weather',
         skills: [
@@ -59,8 +59,8 @@ export const projects: IProject[] = [
         ],
         filters: ['web-js'],
         links: {
-            live: 'https://rajat19.github.io/wander-weather/',
-            github: 'rajat19/wander-weather',
+            live: 'https://rajat19.github.io/travel/',
+            github: 'rajat19/travel',
         }
     },
     {
