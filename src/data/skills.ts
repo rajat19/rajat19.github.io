@@ -26,122 +26,123 @@ import openaiIcon from '@/assets/skills/openai.svg';
 import datadogIcon from '@/assets/skills/datadog.svg';
 
 export enum BackendSkills {
-    NodeJS = "Node.js",
-    Java = "Java",
-    SpringBoot = "Spring Boot",
-    Express = "Express.js",
-    Koa = "Koa.js",
-    Python = "Python",
-    TypeScript = "TypeScript",
-    Golang = "Golang",
-    C = 'C',
-    Cpp = 'C++',
-    Ruby = "Ruby",
-    PHP = "PHP",
-    Laravel = "Laravel",
-    CodeIgniter = "CodeIgniter",
-    Flask = "Flask",
-    Django = "Django",
-    Android = "Android",
+  NodeJS = "Node.js",
+  Java = "Java",
+  SpringBoot = "Spring Boot",
+  Express = "Express.js",
+  Koa = "Koa.js",
+  Python = "Python",
+  TypeScript = "TypeScript",
+  Golang = "Golang",
+  C = 'C',
+  Cpp = 'C++',
+  Ruby = "Ruby",
+  PHP = "PHP",
+  Laravel = "Laravel",
+  CodeIgniter = "CodeIgniter",
+  Flask = "Flask",
+  Django = "Django",
+  Android = "Android",
+  Kotlin = "Kotlin",
 }
 
 export enum FrontendSkills {
-    React = "React",
-    Angular = "Angular",
-    Vue = "Vue.js",
-    Svelte = "Svelte",
-    NextJS = "Next.js",
-    Astro = 'Astro',
-    Jekyll = "Jekyll",
-    Vite = "Vite",
-    Tailwind = "Tailwind",
-    Bootstrap = "Bootstrap",
-    MarkoJS = "MarkoJS",
+  React = "React",
+  Angular = "Angular",
+  Vue = "Vue.js",
+  Svelte = "Svelte",
+  NextJS = "Next.js",
+  Astro = 'Astro',
+  Jekyll = "Jekyll",
+  Vite = "Vite",
+  Tailwind = "Tailwind",
+  Bootstrap = "Bootstrap",
+  MarkoJS = "MarkoJS",
 }
 
 export enum DatabaseSkills {
-    MySQL = "MySQL",
-    Postgres = "Postgres",
-    MongoDB = "MongoDB",
-    Redis = "Redis",
-    Cassandra = "Cassandra",
-    Prometheus = "Prometheus",
-    Firebase = "Firebase",
+  MySQL = "MySQL",
+  Postgres = "Postgres",
+  MongoDB = "MongoDB",
+  Redis = "Redis",
+  Cassandra = "Cassandra",
+  Prometheus = "Prometheus",
+  Firebase = "Firebase",
 }
 
 export enum ToolsSkills {
-    OpenAI = "OpenAI",
-    Gemini = "Gemini",
-    Langgraph = "Langgraph",
-    Datadog = "Datadog",
-    Kafka = "Apache Kafka",
-    Langsmith = "Langsmith",
-    Storm = "Apache Storm",
-    RabbitMQ = "RabbitMQ",
-    Spark = "Apache Spark"
+  OpenAI = "OpenAI",
+  Gemini = "Gemini",
+  Langgraph = "Langgraph",
+  Datadog = "Datadog",
+  Kafka = "Apache Kafka",
+  Langsmith = "Langsmith",
+  Storm = "Apache Storm",
+  RabbitMQ = "RabbitMQ",
+  Spark = "Apache Spark"
 }
 
 export interface ISkill {
-    name: string;
-    level: number;
-    years: number;
-    icon: string;
+  name: string;
+  level: number;
+  years: number;
+  icon: string;
 }
 
 export interface ISkillCategory {
-    title: string;
-    icon: any;
-    skills: ISkill[];
+  title: string;
+  icon: any;
+  skills: ISkill[];
 }
 
 export const skillCategories: ISkillCategory[] = [
-    {
-      title: "Backend Development",
-      icon: LuServer,
-      skills: [
-        { name: BackendSkills.NodeJS, level: 97, years: 8, icon: nodeIcon },
-        { name: BackendSkills.TypeScript, level: 90, years: 7, icon: typescriptIcon },
-        { name: BackendSkills.Java, level: 92, years: 8, icon: javaIcon },
-        { name: BackendSkills.SpringBoot, level: 92, years: 3, icon: springbootIcon },
-        { name: BackendSkills.Python, level: 92, years: 6, icon: pythonIcon },
-        { name: BackendSkills.Flask, level: 92, years: 2, icon: flaskIcon },
-        { name: BackendSkills.Golang, level: 80, years: 2, icon: goIcon }
-      ]
-    },
-    {
-      title: "Frontend Development",
-      icon: LuMonitor,
-      skills: [
-        { name: FrontendSkills.React, level: 97, years: 6, icon: reactIcon },
-        { name: FrontendSkills.NextJS, level: 84, years: 2, icon: nextjsIcon },
-        { name: FrontendSkills.Astro, level: 80, years: 1, icon: astroIcon },
-        { name: FrontendSkills.Jekyll, level: 90, years: 5, icon: jekyllIcon },
-        { name: FrontendSkills.Tailwind, level: 92, years: 1, icon: tailwindIcon },
-        { name: FrontendSkills.Bootstrap, level: 85, years: 1, icon: bootstrapIcon },
-      ]
-    },
-    {
-      title: "Data Stores", 
-      icon: LuDatabase,
-      skills: [
-        { name: DatabaseSkills.MySQL, level: 95, years: 5, icon: mysqlIcon },
-        { name: DatabaseSkills.MongoDB, level: 92, years: 6, icon: mongodbIcon },
-        { name: DatabaseSkills.Redis, level: 94, years: 8, icon: redisIcon },
-        { name: DatabaseSkills.Cassandra, level: 85, years: 3, icon: cassandraIcon },
-        { name: DatabaseSkills.Prometheus, level: 78, years: 2, icon: prometheusIcon },
-        { name: DatabaseSkills.Firebase, level: 84, years: 4, icon: firebaseIcon }
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      icon: LuCloud,
-      skills: [
-        { name: ToolsSkills.Kafka, level: 90, years: 7, icon: kafkaIcon },
-        { name: ToolsSkills.Storm, level: 88, years: 3, icon: stormIcon },
-        { name: ToolsSkills.RabbitMQ, level: 86, years: 5, icon: rabbitmqIcon },
-        { name: ToolsSkills.Spark, level: 79, years: 5, icon: sparkIcon },
-        { name: ToolsSkills.OpenAI, level: 85, years: 1, icon: openaiIcon },
-        { name: ToolsSkills.Datadog, level: 86, years: 6, icon: datadogIcon }
-      ]
-    }
+  {
+    title: "Backend Development",
+    icon: LuServer,
+    skills: [
+      { name: BackendSkills.NodeJS, level: 97, years: 8, icon: nodeIcon },
+      { name: BackendSkills.TypeScript, level: 90, years: 7, icon: typescriptIcon },
+      { name: BackendSkills.Java, level: 92, years: 8, icon: javaIcon },
+      { name: BackendSkills.SpringBoot, level: 92, years: 3, icon: springbootIcon },
+      { name: BackendSkills.Python, level: 92, years: 6, icon: pythonIcon },
+      { name: BackendSkills.Flask, level: 92, years: 2, icon: flaskIcon },
+      { name: BackendSkills.Golang, level: 80, years: 2, icon: goIcon }
+    ]
+  },
+  {
+    title: "Frontend Development",
+    icon: LuMonitor,
+    skills: [
+      { name: FrontendSkills.React, level: 97, years: 6, icon: reactIcon },
+      { name: FrontendSkills.NextJS, level: 84, years: 2, icon: nextjsIcon },
+      { name: FrontendSkills.Astro, level: 80, years: 1, icon: astroIcon },
+      { name: FrontendSkills.Jekyll, level: 90, years: 5, icon: jekyllIcon },
+      { name: FrontendSkills.Tailwind, level: 92, years: 1, icon: tailwindIcon },
+      { name: FrontendSkills.Bootstrap, level: 85, years: 1, icon: bootstrapIcon },
+    ]
+  },
+  {
+    title: "Data Stores",
+    icon: LuDatabase,
+    skills: [
+      { name: DatabaseSkills.MySQL, level: 95, years: 5, icon: mysqlIcon },
+      { name: DatabaseSkills.MongoDB, level: 92, years: 6, icon: mongodbIcon },
+      { name: DatabaseSkills.Redis, level: 94, years: 8, icon: redisIcon },
+      { name: DatabaseSkills.Cassandra, level: 85, years: 3, icon: cassandraIcon },
+      { name: DatabaseSkills.Prometheus, level: 78, years: 2, icon: prometheusIcon },
+      { name: DatabaseSkills.Firebase, level: 84, years: 4, icon: firebaseIcon }
+    ]
+  },
+  {
+    title: "Tools & Technologies",
+    icon: LuCloud,
+    skills: [
+      { name: ToolsSkills.Kafka, level: 90, years: 7, icon: kafkaIcon },
+      { name: ToolsSkills.Storm, level: 88, years: 3, icon: stormIcon },
+      { name: ToolsSkills.RabbitMQ, level: 86, years: 5, icon: rabbitmqIcon },
+      { name: ToolsSkills.Spark, level: 79, years: 5, icon: sparkIcon },
+      { name: ToolsSkills.OpenAI, level: 85, years: 1, icon: openaiIcon },
+      { name: ToolsSkills.Datadog, level: 86, years: 6, icon: datadogIcon }
+    ]
+  }
 ]

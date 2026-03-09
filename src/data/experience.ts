@@ -17,13 +17,37 @@ export interface ExperienceCompany {
 
 export const experiences: ExperienceCompany[] = [
   {
+    company: "Atlassian",
+    location: "Bangalore, India",
+    icon: "https://www.atlassian.com/favicon.ico",
+    roles: [
+      {
+        position: "Principal Engineer",
+        period: "Dec 2026 - Present",
+        description:
+          "Leading efforts to predict migration performance during cloud transition",
+        achievements: [
+          "Leading efforts for building healthcheck investigation framework",
+          "Leading efforts for building performance prediction model for Cloud transition for JIRA and Confluence",
+        ],
+        technologies: [
+          BackendSkills.Kotlin,
+          BackendSkills.SpringBoot,
+          BackendSkills.Python,
+          DatabaseSkills.Postgres,
+          ToolsSkills.Gemini,
+        ],
+      },
+    ],
+  },
+  {
     company: "Indeed.com",
     location: "Hyderabad, India",
     icon: "https://www.indeed.com/favicon.ico",
     roles: [
       {
         position: "Staff Software Engineer",
-        period: "May 2024 - Present",
+        period: "May 2024 - Dec 2026",
         description:
           "Leading high-impact initiatives across cross-functional teams in the Employer Org",
         achievements: [
@@ -33,7 +57,7 @@ export const experiences: ExperienceCompany[] = [
           "Mentored engineers and drove engineering excellence",
         ],
         technologies: [
-          BackendSkills.Java, 
+          BackendSkills.Java,
           BackendSkills.SpringBoot,
           BackendSkills.Python,
           FrontendSkills.React,
@@ -52,7 +76,7 @@ export const experiences: ExperienceCompany[] = [
           "Designed and Developed the Indian language detection and indexing module for jobs on Indeed using n-grams probabilistic models",
         ],
         technologies: [
-          BackendSkills.Java, 
+          BackendSkills.Java,
           BackendSkills.SpringBoot,
           FrontendSkills.React,
           DatabaseSkills.MongoDB,

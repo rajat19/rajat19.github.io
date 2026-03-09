@@ -1,4 +1,4 @@
-import {BackendSkills, DatabaseSkills, FrontendSkills, ToolsSkills} from "@/data/skills.ts";
+import { BackendSkills, DatabaseSkills, FrontendSkills, ToolsSkills } from "@/data/skills.ts";
 
 export interface IProjectLinks {
     live?: string;
@@ -16,7 +16,7 @@ export interface IProjectOrganization {
     link: string;
 }
 
-export type ProjectFilter = 'web-py' | 'web-js' | 'web-jekyll' | 'web-java' | 'web-php' | 'android';
+export type ProjectFilter = 'web-py' | 'web-js' | 'web-jekyll' | 'web-java' | 'web-php' | 'android' | 'ai';
 
 export interface IProject {
     title: string;
@@ -31,26 +31,9 @@ export interface IProject {
 
 export const projects: IProject[] = [
     {
-        title: 'My Wedding Website',
-        description: 'Website for my wedding events',
-        image: 'wedding',
-        skills: [
-            BackendSkills.TypeScript,
-            FrontendSkills.React,
-            FrontendSkills.Tailwind,
-            FrontendSkills.Vite,
-            DatabaseSkills.Firebase,
-        ],
-        filters: ['web-js'],
-        links: {
-            live: 'https://rajat19.github.io/wedding/',
-            github: 'rajat19/wedding',
-        }
-    },
-    {
         title: 'Wanderer',
         description: 'A map based webapp that shows users the best places to visit, temperature and rainfall data for selected country and month.',
-        image: 'wander-weather',
+        image: 'travel',
         skills: [
             BackendSkills.TypeScript,
             FrontendSkills.React,
@@ -78,6 +61,52 @@ export const projects: IProject[] = [
         links: {
             live: 'https://rajat19.github.io/cracking-interview/',
             github: 'rajat19/cracking-interview',
+        }
+    },
+    {
+        title: 'Card Assist',
+        description: 'A webapp that compares and discovers best card for your use case',
+        image: 'card-assist',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.React,
+            DatabaseSkills.Firebase,
+            ToolsSkills.Gemini,
+        ],
+        filters: ['web-js', 'ai'],
+        links: {
+            live: 'https://rajat19.github.io/card-assist/',
+            github: 'rajat19/card-assist',
+        }
+    },
+    {
+        title: 'JobFinder',
+        description: 'A webapp that finds jobs on linkedin, indeed and other platforms based on your resume',
+        image: 'jobfinder',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.NextJS,
+            ToolsSkills.Gemini,
+            ToolsSkills.OpenAI,
+        ],
+        filters: ['web-js', 'ai'],
+        links: {
+            github: 'rajat19/jobfinder',
+        }
+    },
+    {
+        title: 'Brickd',
+        description: 'A webapp provides details for construction based on architect\'s designs',
+        image: 'brickd',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.React,
+            ToolsSkills.Gemini,
+        ],
+        filters: ['web-js', 'ai'],
+        links: {
+            live: 'https://rajat19.github.io/brickd/',
+            github: 'rajat19/brickd',
         }
     },
     {
@@ -182,22 +211,6 @@ export const projects: IProject[] = [
         links: {
             live: 'https://rajat19.github.io/med-portfolio-studio/',
             github: 'rajat19/med-portfolio-studio',
-        }
-    },
-    {
-        title: 'Card Assist',
-        description: 'A webapp that compares and discovers best card for your use case',
-        image: 'card-assist',
-        skills: [
-            BackendSkills.TypeScript,
-            FrontendSkills.React,
-            DatabaseSkills.Firebase,
-            ToolsSkills.Gemini,
-        ],
-        filters: ['web-js'],
-        links: {
-            live: 'https://rajat19.github.io/card-assist/',
-            github: 'rajat19/card-assist',
         }
     },
     {
