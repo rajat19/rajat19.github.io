@@ -1,4 +1,4 @@
-import { BackendSkills, DatabaseSkills, FrontendSkills, ToolsSkills } from "@/data/skills.ts";
+import { BackendSkills, DatabaseSkills, FrontendSkills, MLSkills, ToolsSkills } from "@/data/skills.ts";
 
 export interface IProjectLinks {
     live?: string;
@@ -23,7 +23,7 @@ export interface IProject {
     description?: string;
     image: string;
     filters: ProjectFilter[];
-    skills: (BackendSkills | DatabaseSkills | ToolsSkills | FrontendSkills)[];
+    skills: (BackendSkills | DatabaseSkills | ToolsSkills | FrontendSkills | MLSkills)[];
     metrics?: IProjectMetrics;
     links: IProjectLinks;
     organization?: IProjectOrganization;
@@ -71,7 +71,7 @@ export const projects: IProject[] = [
             BackendSkills.TypeScript,
             FrontendSkills.React,
             DatabaseSkills.Firebase,
-            ToolsSkills.Gemini,
+            MLSkills.Gemini,
         ],
         filters: ['web-js', 'ai'],
         links: {
@@ -81,7 +81,7 @@ export const projects: IProject[] = [
     },
     {
         title: 'Travelog',
-        description: 'My travel blogging website ',
+        description: 'My travel blogging website',
         image: 'travelog',
         skills: [
             BackendSkills.TypeScript,
@@ -95,14 +95,29 @@ export const projects: IProject[] = [
         }
     },
     {
+        title: 'Dota Counter',
+        description: 'Webapp to help pick counter heroes and items for dota2 heroes and team buildup',
+        image: 'dota',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.React,
+            FrontendSkills.Tailwind,
+        ],
+        filters: ['web-js'],
+        links: {
+            live: 'https://rajat19.github.io/dota/',
+            github: 'rajat19/dota',
+        }
+    },
+    {
         title: 'JobFinder',
         description: 'A webapp that finds jobs on linkedin, indeed and other platforms based on your resume',
         image: 'jobfinder',
         skills: [
             BackendSkills.TypeScript,
             FrontendSkills.NextJS,
-            ToolsSkills.Gemini,
-            ToolsSkills.OpenAI,
+            MLSkills.Gemini,
+            MLSkills.OpenAI,
         ],
         filters: ['web-js', 'ai'],
         links: {
@@ -116,7 +131,7 @@ export const projects: IProject[] = [
         skills: [
             BackendSkills.TypeScript,
             FrontendSkills.React,
-            ToolsSkills.Gemini,
+            MLSkills.Gemini,
         ],
         filters: ['web-js', 'ai'],
         links: {
