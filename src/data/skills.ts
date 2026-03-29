@@ -71,15 +71,23 @@ export enum DatabaseSkills {
 }
 
 export enum ToolsSkills {
-  OpenAI = "OpenAI",
-  Gemini = "Gemini",
-  Langgraph = "Langgraph",
   Datadog = "Datadog",
   Kafka = "Apache Kafka",
   Langsmith = "Langsmith",
   Storm = "Apache Storm",
   RabbitMQ = "RabbitMQ",
-  Spark = "Apache Spark"
+  Spark = "Apache Spark",
+  Databricks = "Databricks",
+}
+
+export enum MLSkills {
+  SQL = "SQL",
+  MLOps = "ML Ops",
+  AutoML = "AutoML",
+  OpenAI = "OpenAI",
+  Gemini = "Gemini",
+  Langgraph = "Langgraph",
+  LLM = "Large Language Model",
 }
 
 export interface ISkill {
@@ -141,7 +149,7 @@ export const skillCategories: ISkillCategory[] = [
       { name: ToolsSkills.Storm, level: 88, years: 3, icon: stormIcon },
       { name: ToolsSkills.RabbitMQ, level: 86, years: 5, icon: rabbitmqIcon },
       { name: ToolsSkills.Spark, level: 79, years: 5, icon: sparkIcon },
-      { name: ToolsSkills.OpenAI, level: 85, years: 1, icon: openaiIcon },
+      { name: MLSkills.LLM, level: 85, years: 2, icon: openaiIcon },
       { name: ToolsSkills.Datadog, level: 86, years: 6, icon: datadogIcon }
     ]
   }

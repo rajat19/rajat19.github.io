@@ -1,11 +1,11 @@
-import { BackendSkills, DatabaseSkills, FrontendSkills, ToolsSkills } from "@/data/skills";
+import { BackendSkills, DatabaseSkills, FrontendSkills, ToolsSkills, MLSkills } from "@/data/skills";
 
 export interface ExperienceRole {
   position: string;
   period: string;
   description?: string;
   achievements?: string[];
-  technologies?: (BackendSkills | DatabaseSkills | ToolsSkills | FrontendSkills)[];
+  technologies?: (BackendSkills | DatabaseSkills | ToolsSkills | FrontendSkills | MLSkills)[];
 }
 
 export interface ExperienceCompany {
@@ -27,7 +27,7 @@ export const experiences: ExperienceCompany[] = [
         description:
           "Leading efforts to predict migration performance during cloud transition",
         achievements: [
-          "Leading efforts for building healthcheck investigation framework",
+          "Leading efforts for building post DC to cloud migration incidents investigation framework",
           "Leading efforts for building performance prediction model for Cloud transition for JIRA and Confluence",
         ],
         technologies: [
@@ -35,7 +35,11 @@ export const experiences: ExperienceCompany[] = [
           BackendSkills.SpringBoot,
           BackendSkills.Python,
           DatabaseSkills.Postgres,
-          ToolsSkills.Gemini,
+          ToolsSkills.Databricks,
+          MLSkills.SQL,
+          MLSkills.MLOps,
+          MLSkills.AutoML,
+          MLSkills.LLM,
         ],
       },
     ],
@@ -62,7 +66,7 @@ export const experiences: ExperienceCompany[] = [
           BackendSkills.Python,
           FrontendSkills.React,
           DatabaseSkills.MongoDB,
-          ToolsSkills.OpenAI,
+          MLSkills.LLM,
         ],
       },
       {

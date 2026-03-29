@@ -80,6 +80,21 @@ export const projects: IProject[] = [
         }
     },
     {
+        title: 'Travelog',
+        description: 'My travel blogging website ',
+        image: 'travelog',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.NextJS,
+            FrontendSkills.Tailwind,
+        ],
+        filters: ['web-js'],
+        links: {
+            live: 'https://rajat19.github.io/travelog/',
+            github: 'rajat19/travelog',
+        }
+    },
+    {
         title: 'JobFinder',
         description: 'A webapp that finds jobs on linkedin, indeed and other platforms based on your resume',
         image: 'jobfinder',

@@ -38,7 +38,7 @@ export function SkillsSection() {
                           <span className="font-medium">{skill.name}</span>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <span className="text-sm text-muted-foreground">{skill.years} years</span>
+                          <span className="text-sm text-muted-foreground">{skill.years} year{skill.years > 1 ? 's' : ''}</span>
                           <Badge variant="outline" className="text-xs border-primary/20 text-primary">
                             {skill.level}%
                           </Badge>
