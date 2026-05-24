@@ -80,6 +80,22 @@ export const projects: IProject[] = [
         }
     },
     {
+        title: 'Fund Guru',
+        description: 'Website to find best funds to invest and manage portfolio',
+        image: 'fund-guru',
+        skills: [
+            BackendSkills.TypeScript,
+            FrontendSkills.React,
+            DatabaseSkills.Firebase,
+            MLSkills.Gemini,
+        ],
+        filters: ['web-js', 'ai'],
+        links: {
+            live: 'https://rajat19.github.io/fund-guru/',
+            github: 'rajat19/fund-guru',
+        }
+    },
+    {
         title: 'Travelog',
         description: 'My travel blogging website',
         image: 'travelog',
